@@ -31,9 +31,10 @@ url: https://psurukuc.github.io/ # the base hostname & protocol for your site, e
 github_username:  psurukuc
 
 # Build settings
-theme: minima
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
