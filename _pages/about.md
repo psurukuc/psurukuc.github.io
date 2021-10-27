@@ -2,7 +2,8 @@
 layout: about
 title: about
 permalink: /
-description: Postdoctoral research associate at <a href="https://wlab.yale.edu">Wright Laboratory</a>, <a href="https://physics.yale.edu/">Yale University</a>. Previously a graduate student at <a href="https://www.iit.edu/physics">Illinois Institute of Technology</a>.
+description: Postdoctoral research associate at <a href="https://wlab.yale.edu">Wright Laboratory</a>, <a href="https://physics.yale.edu/">Yale University</a>. 
+# Previously a graduate student at <a href="https://www.iit.edu/physics">Illinois Institute of Technology</a>.
 
 profile:
   align: right
