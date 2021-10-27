@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-nav: true
+nav: false
 dropdown: true
 children: 
     - title: Project 8

@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /teaching/
-title: Teaching
+permalink: /cv/
+title: CV
 description: Coming soon...
 nav: true
 ---

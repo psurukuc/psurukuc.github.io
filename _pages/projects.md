@@ -2,9 +2,9 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Here are the projects I have worked on in the through my career.
+description: Coming soon...
 nav: true
-display_categories: [work]
+display_categories: [neutrino mass]
 horizontal: false
 ---
 <div class="projects">
