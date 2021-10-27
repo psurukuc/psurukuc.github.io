@@ -1,12 +1,18 @@
 ---
 layout: page
-title: submenus
+title: Projects
 nav: true
 dropdown: true
 children: 
-    - title: publications
-      permalink: /publications/
+    - title: Project 8
+      permalink: /project_8/
     - title: divider
-    - title: projects
-      permalink: /projects/
+    - title: CUORE
+      permalink: /cuore/
+    - title: divider
+    - title: CUPID
+      permalink: /cupid/
+    - title: divider
+    - title: PROSPECT
+      permalink: /prospect/
 ---
