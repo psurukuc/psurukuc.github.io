@@ -159,7 +159,7 @@ github: [metadata]
 scholar:
 
   last_name: Surukuchi
-  first_name: [Pranava Teja.]
+  first_name: ["Pranava Teja.", "P. T.", "P. T. ","Pranava"]
 
   style: apa
   locale: en
@@ -178,6 +178,7 @@ scholar:
   details_dir: bibliography
   details_layout: bibtex.html
   details_link: Details
+  # group_by: publication_type
 
   query: "@*"
 

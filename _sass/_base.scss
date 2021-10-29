@@ -55,12 +55,20 @@ blockquote {
   width: 100%;
 
   .address {
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-family: monospace;
+    width: 100%;
     p {
       display: inline-block;
       margin: 0;
+    }
+    .email {
+      display: inline-block;
+      margin: 0;
+      color: var(--global-theme-color);
+      font-size: 1.2rem;
+      font-family: courier;
     }
   }
 }
@@ -353,8 +361,8 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: $grey-color-light;
-    border-bottom: 1px solid $grey-color-light;
+    color: var(--global-theme-color);
+    border-bottom: 1px solid $grey-color;
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -381,9 +389,9 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-    color: $grey-color-light;
-    border-top: 1px solid $grey-color-light;
-    padding-top: 1rem;
+    color: var(--global-theme-color);
+    border-top: 1px solid $grey-color;
+    padding-top: 2rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
     text-align: right;

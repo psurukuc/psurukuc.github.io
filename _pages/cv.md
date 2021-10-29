@@ -1,11 +1,12 @@
 ---
-layout: page
+layout: about
 permalink: /cv/
 title: CV
-description: Coming soon...
+description: Please contact me for references
 nav: true
+order: 6
 ---
 
-<!-- For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like! -->
+<div style="display: flex; justify-content: center;">
+<iframe src="/assets/pdf/Surukuchi_CV.pdf" width="100%" height="800px"></iframe>
+</div>

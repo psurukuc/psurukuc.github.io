@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Projects
+title: Research
 permalink: /projects/
 description: Coming soon...
 nav: true
-display_categories: [neutrino mass]
+order: 2
+display_categories: [Neutrino mass, Neutrinoless Double Beta Decay, Reactor Neutrinos]
+# display_categories: [neutrino, fun]
 horizontal: false
 ---
 <div class="projects">

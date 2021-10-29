@@ -1,7 +1,10 @@
 ---
 layout: page
-title: Projects
+title: Research
+permalink: /research/
+description: Coming soon...
 nav: false
+order: 2
 dropdown: true
 children: 
     - title: Project 8
@@ -13,6 +16,7 @@ children:
     - title: CUPID
       permalink: /cupid/
     - title: divider
-    - title: PROSPECT
+    - title: Reactor Neutrinos
       permalink: /prospect/
 ---
+
