@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Research
+title: Fundamental Neutrino Physics
 permalink: /projects/
-description: Coming soon...
-nav: true
-order: 2
-display_categories: [Neutrino mass, Neutrinoless Double Beta Decay, Reactor Neutrinos]
-# display_categories: [neutrino, fun]
+description: My interest is neutrinos...
+nav: false
+order: 10
+# display_categories: [collaboration, fun]
+display_categories: [Neutrino Mass, Neutrinoless Double Beta Decay, Reactor Neutrinos,fun]
 horizontal: false
 ---
 <div class="projects">

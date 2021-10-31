@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: /assets/img/12.jpg
-importance: 1
-category: neutrino
+title: CUORE
+description: Searching for neutrinoless double beta decay
+img: /assets/img/CUORE_logo.png
+importance: 2
+category: Neutrinoless Double Beta Decay
 ---
 
 Every project has a beautiful feature showcase page.

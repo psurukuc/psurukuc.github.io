@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 description: Coming soon...
 nav: false
-order: 2
+order: 10
 dropdown: true
 children: 
     - title: Project 8

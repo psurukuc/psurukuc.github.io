@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: CUPID
+description: Searching for neutrinoless double beta decay
+img: /assets/img/CUPID_logo.png
 importance: 3
-category: fun
+category: Neutrinoless Double Beta Decay
 ---
 
 Every project has a beautiful feature showcase page.

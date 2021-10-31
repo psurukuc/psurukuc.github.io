@@ -11,7 +11,7 @@ p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
 a, table.table a {
   color: var(--global-theme-color);
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color);
     text-decoration: underline;
   }
   &:hover:after :not(.nav-item.dropdown) {
@@ -75,7 +75,7 @@ blockquote {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 40%;
     .address {
       p { display: block; }
     }
@@ -101,7 +101,7 @@ blockquote {
   box-shadow: none;
   border-bottom: 1px solid $grey-color-light;
   background-color: var(--global-bg-color);
-  opacity: 0.95;
+  opacity: 0.85;
 }
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -148,7 +148,7 @@ blockquote {
     font-size: 1.7rem;
     a {
       i::before {
-        color: var(--global-text-color);
+        color: var(--global-text-color-light);
         -webkit-transition: all 0.2s ease-in-out;
       }
       &:hover {
@@ -215,7 +215,7 @@ blockquote {
     font-size: 4rem;
     a {
       i::before {
-        color: var(--global-text-color);
+        color: var(--global-text-color-light);
         -webkit-transition: all 0.2s ease-in-out;
       }
       &:hover {

@@ -10,5 +10,8 @@
 "CUPID":
     url: https://cupid-i.lngs.infn.it/doku.php?id=cupid_pub:start/
 
-"NONE":
+"OTHER":
     url: #
+
+"Ph.D.":
+    url: https://ui.adsabs.harvard.edu/abs/2019PhDT........61S/abstract

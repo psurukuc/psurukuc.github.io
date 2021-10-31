@@ -2,6 +2,7 @@
 ---
 
 <div class="row">
+{% if entry.type != "conference" %}
   <div class="col-sm-2 abbr">
   {% if entry.abbr %}
     <!-- {% if site.data.venues[entry.abbr] %}
@@ -11,8 +12,13 @@
     <!-- {% endif %} -->
   {% endif %}
   </div>
+  {% endif %}
 
+  {% if entry.type == "conference" %}
+  <div id="{{entry.key}}" class="col-md-10">
+  {% else %}
   <div id="{{entry.key}}" class="col-sm-8">
+  {% endif %}
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
@@ -66,17 +72,21 @@
           {% endif %}
         {% endfor %}
       </div> -->
-
+      {% if entry.type != "conference" %}
+        {{entry.type}}
+      {% endif %}
       <div class="periodical">
       {% if entry.type == "article" %}
-        {% if entry.publication_type == "refereed" %}
+        {% if entry.publication_type == "Refereed" %}
           <!-- <em style="color: var(--global-theme-color);">{{entry.journal}}, </em> -->
           <em>{{entry.journal}}, {{entry.volume}}, {{entry.pages}}, </em>
-        {% elsif entry.publication_type == "preprint" %}
+        {% elsif entry.publication_type == "Preprint" %}
           <em>{{entry.publication_type}}, </em>
         {% endif %}
       {% elsif entry.type == "inproceedings" %}
         <em>In {{entry.booktitle}}, </em>
+      {% elsif entry.type == "conference" %}
+        <em>{{entry.name}}, {{entry.location}},</em>
       {% endif %}
       <!-- {% if entry.month %}
         {{entry.month | capitalize}}
