@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-permalink: /research/
+permalink: /sub/project_cards/
 description: Coming soon...
 nav: false
 order: 10

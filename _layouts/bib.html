@@ -19,10 +19,10 @@
   {% else %}
   <div id="{{entry.key}}" class="col-sm-8">
   {% endif %}
-    {% if entry.type == "thesis" %}
-      {{reference}}
-    {% else %}
-      <div class="title">{{entry.title}}</div>
+  {% if entry.type == "thesis" %}
+    {{reference}}
+  {% else %}
+    <div class="title">{{entry.title}}</div>
       <!-- <div class="author">
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
@@ -72,7 +72,9 @@
           {% endif %}
         {% endfor %}
       </div> -->
-      {% if entry.type != "conference" %}
+      {% if entry.type == "phdthesis" %}
+      {{entry.abbr}} {{entry.publication_type}}
+      {% elsif entry.type != "conference" %}
         {{entry.type}}
       {% endif %}
       <div class="periodical">
@@ -83,17 +85,24 @@
         {% elsif entry.publication_type == "Preprint" %}
           <em>{{entry.publication_type}}, </em>
         {% endif %}
+        {% if entry.year %}
+          {{entry.year}}
+        {% endif %}
       {% elsif entry.type == "inproceedings" %}
         <em>In {{entry.booktitle}}, </em>
+        {% if entry.year %}
+          {{entry.year}}
+        {% endif %}
       {% elsif entry.type == "conference" %}
-        <em>{{entry.name}}, {{entry.location}},</em>
+        <em>{{entry.name}},</em> 
+        {% if entry.year %}
+          {{entry.year}}<br>
+        {% endif %}
+        {{entry.location}}
       {% endif %}
       <!-- {% if entry.month %}
         {{entry.month | capitalize}}
       {% endif %} -->
-      {% if entry.year %}
-        {{entry.year}}
-      {% endif %}
       </div>
     {% endif %}
 
@@ -140,6 +149,13 @@
       <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
       {% endif %}
     {% endif %}
+    {% if entry.flyer %}
+    {% if entry.flyer contains '://' %}
+    <a href="{{ entry.flyer }}" class="btn btn-sm z-depth-0" role="button">Flyer</a>
+    {% else %}
+    <a href="{{ entry.flyer | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+    {% endif %}
+  {% endif %}
     {% if entry.slides %}
       {% if entry.slides contains '://' %}
       <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
@@ -150,7 +166,13 @@
     {% if entry.website %}
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
     {% endif %}
-    </div>
+    {% if entry.video %}
+      <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+    {% endif %}
+    {% if entry.podcast %}
+    <a href="{{ entry.podcast }}" class="btn btn-sm z-depth-0" role="button">Podcast</a>
+  {% endif %}
+  </div>
 
     <!-- Hidden abstract block -->
     {% if entry.abstract %}
