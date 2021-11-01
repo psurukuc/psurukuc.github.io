@@ -78,7 +78,7 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Researching neutrinos  # your blog must have a name for it to show up in the nav bar
+# blog_name: Researching neutrinos  # your blog must have a name for it to show up in the nav bar
 blog_description: Thoughts on various news from neutrino experiments
 permalink: /blog/:year/:title/
 
