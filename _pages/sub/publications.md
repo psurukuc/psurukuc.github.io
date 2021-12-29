@@ -10,11 +10,13 @@ nav: false
 order: 10
 ---
 
-
-List of publications arranged in reverse chronological order. Total publication count:
+<div class="select_publications">
 {% for p in page.paper_types %}
+  <p>
     {% bibliography_count -f papers -q @*[publication_type={{p}}]* %} {{p}}
+  </p>
 {% endfor %}
+</div>
 
 <div class="publications">
 {% for p in page.paper_types %}

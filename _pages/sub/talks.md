@@ -8,11 +8,13 @@ nav: false
 order: 10
 ---
 
-List of talks and presentattions arranged in reverse chronological order. Total talk count:
-
+<div class="select_publications">
 {% for t in page.types %}
+  <p>
     {% bibliography_count -f talks -q @*[abbr={{t}}]*  %} {{t}}
+  </p>
 {% endfor %}
+</div>
 <div class="publications">
 {% for t in page.types %}
   <h2 class="year">{{t}}</h2>

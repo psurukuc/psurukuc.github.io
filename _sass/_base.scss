@@ -100,7 +100,7 @@ blockquote {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid $grey-color-light;
-  background-color: var(--global-bg-color);
+  background-color: var(--global-footer-text-color);
   opacity: 0.85;
 }
 .navbar .dropdown-menu {
@@ -373,7 +373,7 @@ footer.sticky-bottom {
 
 // Publications
 
-.publications {
+.publications, .select_publications {
   margin-top: 2rem;
   h1 {
     color: var(--global-theme-color);
@@ -489,6 +489,19 @@ footer.sticky-bottom {
         border-color: var(--global-text-color);
       }
     }
+  }
+}
+
+// select publications class for about page
+.select_publications {
+  background-color: var(--global-footer-text-color);
+  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 15px;
+  h2 {
+    padding-top: 2rem;
   }
 }
 
