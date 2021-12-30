@@ -9,11 +9,11 @@ order: 10
 ---
 
 <div class="select_publications">
-{% for t in page.types %}
   <p>
-    {% bibliography_count -f talks -q @*[abbr={{t}}]*  %} {{t}}
+    {% for t in page.types %}
+     {{t}}: {% bibliography_count -f talks -q @*[abbr={{t}}]*  %} &nbsp;&nbsp;&nbsp; 
+    {% endfor %}
   </p>
-{% endfor %}
 </div>
 <div class="publications">
 {% for t in page.types %}

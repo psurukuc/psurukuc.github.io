@@ -8,16 +8,15 @@ layout: default
     {% if page.profile %}
     <!-- <header class="post-header"> -->
     <!-- </header> -->
-    <div class="profile float-left">
+    <!-- <div class="profile float-left">
       <h3 class="post-title">
        <span class="font-weight-bold">Contact</span> 
       </h3>
       <div class="address">
         {{ site.first_name }} {{ site.last_name }} <br>
-        <!-- <p class="email">{{ site.email }}</p>  -->
         <a href="mailto:{{ site.email | encode_email }}"><i class="email">{{ site.email }}</i></a>
         </div>
-    </div>
+    </div> -->
     
     <div class="clearfix">
       {{ content }}
@@ -25,22 +24,25 @@ layout: default
 
     <div class="profile float-left">
       <h3 class="post-title">
-       <span class="font-weight-bold">Address</span> 
+       <span class="font-weight-bold">Contact</span> 
       </h3>
       {% if page.profile.mailing %}
         <div class="address">
           {{ page.profile.mailing }}
         </div>
       {% endif %}
+      <div class="address">
+        <a href="mailto:{{ site.email | encode_email }}"><p class="email">{{ site.email }}</p></a>
+        </div>
     </div>
     {% endif %}
 
     <div class="clearfix">
       {{ content }}
     </div>
-
+    
     {% if page.social %}
-    <div class="social">
+    <div class="social", style="padding-top: 20px">
       <div class="contact-icons">
         {% include social.html %}
       </div>
