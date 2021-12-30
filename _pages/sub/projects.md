@@ -28,10 +28,13 @@ My research interests lie in the intersection of partcile and nuclear physics wi
           </div>
         </div>
       {% else %}
-        <div class="grid">
+        <!-- <div class="grid"> -->
+        <div class="container">
+          <div class="col">
           {% for project in sorted_projects %}
             {% include projects.html %}
           {% endfor %}
+        </div>
         </div>
       {% endif %}
     {% endfor %}
