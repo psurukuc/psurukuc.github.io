@@ -2,6 +2,7 @@
 layout: page
 title: PROSPECT
 description: Physics with reactor neutrinos
+snapshot: Reactor neutrinos to search for sterile neutrinos
 img: /assets/img/PROSPECT_logo.png
 importance: 4
 category: Reactor Neutrinos

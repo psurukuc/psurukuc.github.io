@@ -1,10 +1,11 @@
 ---
 layout: page
 title: CUPID
+snapshot: Searching for neutrinoless double beta decay
 description: Searching for neutrinoless double beta decay
 img: /assets/img/CUPID_logo.png
 importance: 3
 category: Neutrinoless Double Beta Decay
 ---
 
-Coming soon...
+Coming soon... ;'lsdkfk;sd jflks jflk sdfklj sdflkjs  lkjsd fjsa fjs dlijks fdkljsdlk fjlsjd f sdlkfjs lkdjfkldsjj lksf jsd kfljsdf

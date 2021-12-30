@@ -10,7 +10,7 @@ display_categories: [neutrino]
 horizontal: false
 dropdown: true
 children: 
-    - title: Research Interests
+    - title: Research Projects
       permalink: /sub/projects/
     - title: divider
     - title: Publications

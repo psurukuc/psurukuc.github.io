@@ -497,12 +497,19 @@ footer.sticky-bottom {
       }
     }
   }
-  .listbadge {
-    color: var(--global-theme-color);
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  .btn {
+    margin-top: 0rem;
+    margin-left: 0rem;
+    color: var(--global-text-color);
+    border: 1px solid var(--global-text-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+    }
   }
   p {
     font-size: 1em;
@@ -513,7 +520,7 @@ footer.sticky-bottom {
 // select publications class for about page
 .select_publications {
   background-color: var(--global-footer-text-color);
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-left: 2rem;
   padding-right: 1rem;
   padding-top: 2rem;

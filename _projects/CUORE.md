@@ -2,6 +2,7 @@
 layout: page
 title: CUORE
 description: Searching for neutrinoless double beta decay
+snapshot: Searching for neutrinoless double beta decay
 img: /assets/img/CUORE_logo.png
 importance: 2
 category: Neutrinoless Double Beta Decay

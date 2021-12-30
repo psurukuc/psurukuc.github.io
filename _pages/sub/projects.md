@@ -16,7 +16,6 @@ My research interests lie in the intersection of partcile and nuclear physics wi
   <!-- Display categorized projects -->
     {% for category in page.display_categories %}
       <h2 class="category">{{ category }}</h2>
-      <!-- k;jsd fkljsd fls dfjklsdh fjkhs fksh fjksh fkjsh jhsjhkhsfuiy sduofhs dolghdsofgiuw pdfueruoty;cj;lshfsjdy fiowuf;sjdhfo;isdfu i -->
       {% assign categorized_projects = site.projects | where: "category", category %}
       {% assign sorted_projects = categorized_projects | sort: "importance" %}
       <!-- Generate cards for each project -->
@@ -36,8 +35,10 @@ My research interests lie in the intersection of partcile and nuclear physics wi
         </div>
       {% endif %}
     {% endfor %}
-
   {% else %}
+
+
+
   <!-- Display projects without categories -->
     {% assign sorted_projects = site.projects | sort: "importance" %}
     <!-- Generate cards for each project -->
