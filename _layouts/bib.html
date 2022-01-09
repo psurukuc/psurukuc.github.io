@@ -2,91 +2,44 @@
 ---
 
 <div class="row">
-{% if entry.type != "conference" %}
-  <div class="col-sm-2 abbr">
-  {% if entry.abbr %}
-    <!-- {% if site.data.venues[entry.abbr] %}
-    <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
-    {% else %} -->
-  <abbr class="badge"><a href="{{site.data.projects[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
-    <!-- {% endif %} -->
-  {% endif %}
-  </div>
+  <!-- Generates a badge only if the type is not conference or papers -->
+  {% if entry.type != "conference" %}
+      {% if entry.abbr %}
+      <div class="col-sm-2 abbr">
+        <abbr class="badge"><a href="{{site.data.projects[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+      </div>
+      {% endif %}
   {% endif %}
 
   {% if entry.type == "conference" %}
   <div id="{{entry.key}}" class="col-md-10">
   {% else %}
-  <div id="{{entry.key}}" class="col-sm-8">
+    {% if entry.abbr %}
+    <div id="{{entry.key}}" class="col-sm-8">
+    {% else %}
+    <div id="{{entry.key}}" class="col-sm-10">
+    {% endif %}  
   {% endif %}
-  {% if entry.type == "thesis" %}
-    {{reference}}
-  {% else %}
     <div class="title">{{entry.title}}</div>
-      <!-- <div class="author">
-        {% for author in entry.author_array %}
-          {% assign author_is_self = false %}
-          {% if author.last == site.scholar.last_name%}
-            {% if site.scholar.first_name contains author.first%}
-              {% assign author_is_self = true %}
-            {% endif %}
-          {% endif %}
-          {% assign coauthor_url = nil %}
-          {% if site.data.coauthors[author.last] %}
-            {% for coauthor in site.data.coauthors[author.last] %}
-              {% if coauthor.firstname contains author.first %}
-                {% assign coauthor_url = coauthor.url %}
-                {% break %}
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-          
-          {% if forloop.length == 1 %}
-            {% if author_is_self %}
-              <em>{{author.last}}, {{author.first}}</em>
-            {% else %}
-              {{author.last}}, {{author.first}}
-            {% endif %}
-          {% else %}
-            {% unless forloop.last %}
-              {% if author_is_self %}
-                <em>{{author.last}}, {{author.first}}</em>,
-              {% else %}
-                {% if coauthor_url %}
-                  <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>,
-                {% else %}
-                  {{author.last}}, {{author.first}},
-                {% endif %}
-              {% endif %}
-            {% else %}
-              {% if author_is_self %}
-                and <em>{{author.last}}, {{author.first}}</em>
-              {% else %}
-                {% if coauthor_url %}
-                  and <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>
-                {% else %}
-                  and {{author.last}}, {{author.first}}
-                {% endif %}
-              {% endif %}
-            {% endunless %}
-          {% endif %}
-        {% endfor %}
-      </div> -->
       {% if entry.type == "phdthesis" %}
-      {{entry.abbr}} {{entry.publication_type}}
+      <!-- {{reference}} -->
+      <em style="color: var(--global-theme-color);">{{entry.abbr}} {{entry.publication_type}}</em><br>
+      <p style="display:inline;">{{entry.school}}</p>
+      <p style="display:inline; font-weight:bold;">{{entry.year}}</p>
       {% elsif entry.type != "conference" %}
         <!--{{entry.type}}-->
       {% endif %}
       <div class="periodical">
       {% if entry.type == "article" %}
         {% if entry.publication_type == "Refereed" %}
-          <!-- <em style="color: var(--global-theme-color);">{{entry.journal}}, </em> -->
-          <em>{{entry.journal}}, {{entry.volume}}, {{entry.pages}}, </em>
+          <em style="color: var(--global-theme-color);">{{entry.journal}}, {{entry.volume}}, {{entry.pages}}, </em>
         {% elsif entry.publication_type == "Preprint" %}
           <em>{{entry.publication_type}}, </em>
         {% endif %}
         {% if entry.year %}
-          {{entry.year}}
+          {% if entry.abbr %}
+          <p style="font-weight:bold; display:inline;">{{entry.year}}</p>
+          {% endif %}
         {% endif %}
       {% elsif entry.type == "inproceedings" %}
         <em>In {{entry.booktitle}}, </em>
@@ -94,17 +47,13 @@
           {{entry.year}}
         {% endif %}
       {% elsif entry.type == "conference" %}
-        <em>{{entry.name}},</em> 
+        <em style="color: var(--global-theme-color);">{{entry.name}},</em> 
         {% if entry.year %}
-          {{entry.year}}<br>
+        <p style="display:inline; font-weight:bold; color:var(--global-theme-color);">{{entry.year}}</p><br>
         {% endif %}
-        {{entry.location}}
+        {{entry.location}}<br>
       {% endif %}
-      <!-- {% if entry.month %}
-        {{entry.month | capitalize}}
-      {% endif %} -->
       </div>
-    {% endif %}
 
     <div class="links">
       <!--website-->
@@ -184,19 +133,10 @@
       <a href="{{ entry.podcast }}" class="btn btn-sm z-depth-0" role="button">Podcast</a>
     {% endif %}
   </div>
-
-    <!-- Hidden abstract block -->
-    {% if entry.abstract %}
-      <div class="abstract hidden">
+      {% if entry.abstract %}
+      <div class="abstract">
         <p>{{ entry.abstract }}</p>
       </div>
     {% endif %}
-
-    <!-- Hidden bibtex block -->
-    <!-- {% if entry.bibtex_show %}
-    <div class="bibtex hidden">
-      {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
-    </div>
-    {% endif %} -->
   </div>
 </div>

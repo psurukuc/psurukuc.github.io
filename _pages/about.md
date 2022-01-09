@@ -20,22 +20,21 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello, thanks for stopping by! :wave:
+Hello, thanks for stopping by! :wave:   My name is Pranava. I am Postdoctoral Research Associate at Yale University working on discerning the properties of neutrino -- the least known fundamental particle.
 
-My name is Pranava. I am Postdoctoral Research Associate at Yale University working on understanding neutrino properties. 
+I got my PhD from Illinois Institute of Technology, Chicago in 2019. During my PhD, I worked on the [PROSPECT](https://prospect.yale.edu/) reactor neutrino experiment leading the design, fabrication, QA, and assembly of the inner detector [subsystem](https://doi.org/10.1088/1748-0221/14/04/P04014) and led its [first sterile neutrino search](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.251801). Find more information on neutrinos [here](/sub/resources/). 
 
-I got my PhD from Illinois Institute of Technology, Chicago in 2019. During my PhD, I worked on the [PROSPECT](https://prospect.yale.edu/) reactor neutrino experiment leading the design, fabrication, QA, and assembly of the inner detector [subsystem](https://doi.org/10.1088/1748-0221/14/04/P04014) and led its first sterile neutrino [search](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.251801). 
-I then joined the Wright lab at Yale University as a postdoc working on the [Project 8](https://www.project8.org/) neutrino mass experiment and [CUORE](https://cuore.lngs.infn.it/) and [CUPID](https://cupid-i.lngs.infn.it/doku.php?id=cupid_pub:start/) neutrinoless double beta decay experiment while continuing to work on the PROSPECT experiment. 
+I then joined the Wright lab at Yale University as a postdoc working on the [Project 8](https://www.project8.org/) neutrino mass experiment and [CUORE](https://cuore.lngs.infn.it/) and [CUPID](https://cupid-i.lngs.infn.it/doku.php?id=cupid_pub:start/) neutrinoless double beta decay experiments while continuing to work on the PROSPECT experiment. 
 On the Project 8, I am leading the antenna design and the event reconstruction efforts on the upcoming Phase of the experiment. 
 On CUORE experiment, I have led the design of the muon veto system that will eventually be used for CUPID. 
 I am also currently working on understanding the sources of resolution degradation to improve the sensitivity of the CUPID experiment.  
+Learn more about neutrinos here.
 
-This wesbite is currenlty under construction but soon it will contain information on my research interests, teaching, and other interests.
+<!-- This wesbite is currenlty under construction but soon it will contain information on my research interests, teaching, and other interests.
 Please visit my [projects](/sub/projects) page, and my [publications](/sub/publications/) and [talks](/sub/talks) to learn more about my research interests.
-You can also find more details about my [teaching philosophy](/sub/teaching_philosophy) my [teaching and mentoring](/sub/mentoring/) experience and my [training](/sub/training).
+You can also find more details about my [teaching philosophy](/sub/teaching_philosophy) my [teaching and mentoring](/sub/mentoring/) experience and my [training](/sub/training). -->
 
-You are welcome to [contact](contact) me if you would like to learn more about my research. 
-
+Please don't hesitate to [contact](contact) for questions on my research or if you would like to collaborate. I particularly encourage any students in need of advice to contact me.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

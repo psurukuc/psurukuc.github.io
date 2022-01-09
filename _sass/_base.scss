@@ -503,6 +503,13 @@ footer.sticky-bottom {
         -o-transition: 0.15s ease;
         transition: all 0.15s ease;
       }
+      div.abstract {
+        p {
+          font-size: 0.9em;
+          color: var(--global-text-color-light);
+          opacity: 1;
+        }
+      }
       div.abstract.hidden {
         border: dashed 1px var(--global-bg-color);
       }
