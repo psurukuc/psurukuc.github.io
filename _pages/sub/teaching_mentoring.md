@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /sub/mentoring/
+permalink: /sub/teaching_mentoring/
 title: Teaching and Mentoring
 description: Coming soon...
 nav: false

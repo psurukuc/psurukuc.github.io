@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /sub/training/
-title: Training
+permalink: /sub/teaching_training/
+title: Teaching Training
 description: Coming soon...
 nav: false
 ---
