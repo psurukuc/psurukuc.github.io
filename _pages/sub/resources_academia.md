@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resources for academia and research
+title: Research, Academia, and Miscellany
 permalink: /sub/resources_academia/
 description: Coming soon...
 nav: false

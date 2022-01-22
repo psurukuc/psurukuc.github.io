@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Teaching and mentoring resources
+title: Teaching and Mentoring Resources
 permalink: /sub/resources_teaching/
 description: Coming soon...
 nav: false
