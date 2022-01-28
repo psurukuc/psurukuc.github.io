@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Research projects
+title: Research Projects
 permalink: /sub/research_projects/
 # description: My interest is neutrinos...
 nav: false
