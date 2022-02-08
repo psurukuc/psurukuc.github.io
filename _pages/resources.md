@@ -3,8 +3,8 @@ layout: page
 title: Resources
 permalink: /resources/
 # description: Neutrino, research, science-related resources I have collected over the years. 
-nav: true
-order: 4
+nav: false
+order: 40
 horizontal: false
 dropdown: true
 children: 

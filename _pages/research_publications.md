@@ -1,13 +1,13 @@
 ---
 layout: page
-permalink: /sub/research_publications/
+permalink: /research_publications/
 title: Publications
 # description: List of publications by reverse chronological order. Authors are typically listed in the alphabetical order of the last names.
 # years: [2021, 2020, 2019, 2018, 2016, 2015]
 current_year: 2021
 paper_types: [Thesis, Refereed, Preprint, Proceedings]
-nav: false
-order: 10
+nav: true
+order: 4
 ---
 
 

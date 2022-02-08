@@ -1,16 +1,16 @@
 ---
 layout: page
 title: Research Projects
-permalink: /sub/research_projects/
+permalink: /research_projects/
 # description: My interest is neutrinos...
-nav: false
-order: 10
+nav: true
+order: 2
 # display_categories: [collaboration, fun]
 display_categories: [Neutrino Mass, Neutrinoless Double Beta Decay, Reactor Neutrinos]
 horizontal: false
 ---
 
-My research interests lie in the intersection of partcile and nuclear physics with focus on neutrinos. 
+My research interests lie in the intersection of particle and nuclear physics with a focus on neutrinos. 
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
@@ -30,16 +30,17 @@ My research interests lie in the intersection of partcile and nuclear physics wi
       {% else %}
         <!-- <div class="grid"> -->
         <div class="container">
-          <div class="col">
-          {% for project in sorted_projects %}
-            {% include projects.html %}
-          {% endfor %}
-        </div>
+          <div class="row">
+            <div class="col">
+            {% for project in sorted_projects %}
+              {% include projects.html %}
+            {% endfor %}
+            </div>
+          </div>
         </div>
       {% endif %}
     {% endfor %}
   {% else %}
-
 
 
   <!-- Display projects without categories -->

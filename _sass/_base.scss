@@ -336,16 +336,16 @@ footer.sticky-bottom {
 
     &:hover {
       img {
-        height: 1cm;
-        opacity: 0.5;
+        height: 4cm;
+        opacity: 1.0;
+        margin-top: 0.2rem;
       }
       .card-title {
-        color: var(--global-theme-color);
+        color: $grey-color-dark;
+        opacity: 1.0;
       }
       .card-text 
       {
-        color: $black-color;
-        opacity: 1.0;
       }
     }
   }
@@ -353,17 +353,27 @@ footer.sticky-bottom {
   .card {
     img {
       width: 100%;
-      height: 4cm;
+      opacity: 0.9;
+      height: 3cm;
+      margin-top: 1cm;
       object-fit: contain;
+      align-items: center;
     }
     .card-title {
-      color: $black-color;
+      color: $grey-color-dark;
+      margin-left: 0.5rem;
+      opacity: 0.5;
     }
     .card-text 
     {
-      opacity: 0.0;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      opacity: 1.0;
+      color: $grey-color-dark;
     }
-    height: 7cm;
+    color: $grey-color-dark;
+    height: 5cm;
   }
 
   .card-item {
@@ -373,6 +383,7 @@ footer.sticky-bottom {
     .row {
       display: flex;
       align-items: center;
+      justify-content: center;
     }
   }
 

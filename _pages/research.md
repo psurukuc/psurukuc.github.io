@@ -3,8 +3,8 @@ layout: page
 title: Research
 permalink: /research/
 # description: Learn more about the [projects](/sub/projects) I work on and my publications and talks here. 
-nav: true
-order: 2
+nav: false
+order: 20
 display_categories: [neutrino]
 horizontal: false
 dropdown: true

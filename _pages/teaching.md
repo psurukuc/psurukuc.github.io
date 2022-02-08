@@ -3,8 +3,8 @@ layout: page
 permalink: /teaching/
 title: Teaching
 description: Coming soon...
-nav: true
-order: 3
+nav: false
+order: 30
 dropdown: true
 children: 
     - title: Teaching Philosophy
