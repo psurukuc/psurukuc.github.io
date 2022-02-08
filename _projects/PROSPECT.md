@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: project
 title: PROSPECT
-description: Physics with reactor neutrinos
+description: PROSPECT is a short baseline reactor antineutrino experiment with precisely measure reactor antineutrino spectrum and perform sterile neutrino induced oscillation searches. I led the R&D and assembly of optical reflector subsystem on the experiment. I also spear-headed the experiment's first sterile neutrino oscillation search.
 snapshot: Reactor neutrinos to search for sterile neutrinos
 img: /assets/img/PROSPECT_logo.png
 importance: 4
@@ -9,7 +9,7 @@ category: Reactor Neutrinos
 ---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-10" src="{{ '/assets/img/PROSPECT_yo.png' | relative_url }}" alt="" title="PROSPECT inner detector assembly"/>
+        <img class="img-fluid rounded z-depth-10" src="{{ '/assets/img/PROSPECT_yo.png' | relative_url }}" alt="PROSPECT assembly" title="PROSPECT inner detector assembly"/>
     </div>
 </div>
 <div class="caption">

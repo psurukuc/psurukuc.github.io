@@ -1,14 +1,16 @@
 ---
-layout: page
+layout: project
 title: CUORE
-description: Searching for neutrinoless double beta decay
-snapshot: Searching for neutrinoless double beta decay
+description: CUORE and CUPID are designed to decipher the nature of neutrinos by searching for neutrinoless double beta decay process. My focus on these experiments has been to enhance their sensitivity  by (i) improving the detector resolution by mitigating sources of noise (ii) reducing backgrounds by tagging cosmogenic backgrounds
 img: /assets/img/CUORE_logo.png
+img2: /assets/img/CUPID_logo.png
 importance: 2
 category: Neutrinoless Double Beta Decay
 ---
 
 Coming soon...
+<!-- CUORE is a ongoing neutrinoless double beta decay (NDBD) experiment that placed the tightest limits on this rare process using Tellurium. CUPID is an upcoming NDBD experiment designed to cover the full inverted hierarchy.  -->
+
 
 
 <!-- Every project has a beautiful feature showcase page.

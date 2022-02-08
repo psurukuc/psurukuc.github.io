@@ -36,22 +36,40 @@
   {% else %}
   <a href="{{ project.url | relative_url }}">
   {% endif %}
+
+
+
+<!-- Remove between these lines  -->
     <div class="row no-gutters">
+      {% if project.title=="CUORE" %}
       <div class="col-md-3">
-        <!-- <h5 class="card-title">{{ project.snapshot}}</h5> -->
-        {% if project.img %}
-        <img src="{{ project.img | relative_url }}" alt="project thumbnail">
-        {% endif %}
-        <!-- <p class="card-title">{{ project.snapshot}}</p> -->
+      <img src="{{ project.img | relative_url }}" alt="{{ project.title}}">
       </div>
       <div class="col">
-        <!-- <div class="card-body"> -->
-          <!-- <h5 class="card-title">Card title</h5> -->
-          <!-- <p class="card-text">{{ project.snapshot}}</p> -->
-          <p class="card-text">{{ project.description}}</p>
-          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-        <!-- </div> -->
+        <p class="card-text">{{ project.description}}</p>
       </div>
-    </div>
+      <div class="col-md-3">
+        <img src="{{ project.img2 | relative_url }}" alt="{{ project.title}}">
+      </div>
+      {% else %}
+<!-- Remove between these lines  -->
+
+
+
+
+        <div class="col-md-3">
+        {% if project.img %}
+        <img src="{{ project.img | relative_url }}" alt="{{ project.title}}">
+        {% endif %}
+      </div>
+      <div class="col">
+          <p class="card-text">{{ project.description}}</p>
+      </div>
+
+
+<!-- Remove this line  -->
+    {% endif %}
+
+   </div>
   </a>
 </div>

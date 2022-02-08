@@ -10,7 +10,7 @@ display_categories: [Neutrino Mass, Neutrinoless Double Beta Decay, Reactor Neut
 horizontal: false
 ---
 
-My research interests lie in the intersection of particle and nuclear physics with a focus on neutrinos. 
+My research interests lie in the intersection of particle and nuclear physics with a focus on neutrinos. I am interested in understanding the fundmental properties of neutrinos including their mass, how they acquires their mass and whether there are other undiscovered neutrino flavors.
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
