@@ -6,7 +6,12 @@ layout: default
   <header class="post-header">
     <div class="project float-right">
       {% if page.img %}  
-      <img class="img-thumbnail" src="{{ page.img | relative_url }}"  alt="{{ page.title}}">
+        {% if page.title=="CUORE and CUPID" %}
+        <img class="img-thumbnail" style="width:48%" src="{{ page.img | relative_url }}"  alt="{{ page.title}}">
+        <img class="img-thumbnail" style="width:45%"  src="{{ page.img2 | relative_url }}"  alt="{{ page.title}}">
+        {% else %}
+        <img class="img-thumbnail" src="{{ page.img | relative_url }}"  alt="{{ page.title}}">
+        {% endif %}
       {% endif %}
     </div>
     <h1 class="post-title">{{ page.title }}</h1>

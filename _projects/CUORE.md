@@ -1,6 +1,6 @@
 ---
 layout: project
-title: CUORE
+title: CUORE and CUPID
 description: CUORE and CUPID are designed to decipher the nature of neutrinos by searching for neutrinoless double beta decay process. My focus on these experiments has been to enhance their sensitivity  by (i) improving the detector resolution by mitigating sources of noise (ii) reducing backgrounds by tagging cosmogenic backgrounds
 img: /assets/img/CUORE_logo.png
 img2: /assets/img/CUPID_logo.png
