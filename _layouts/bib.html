@@ -30,21 +30,18 @@
         <!--{{entry.type}}-->
       {% endif %}
       <div class="periodical">
-      {% if entry.type == "article" %}
+      {% if entry.type == "article" or entry.type == "inproceedings"%}
         {% if entry.publication_type == "Refereed" %}
           <em style="color: var(--global-theme-color);">{{entry.journal}}, {{entry.volume}}, {{entry.pages}}, </em>
         {% elsif entry.publication_type == "Preprint" %}
           <em>{{entry.publication_type}}, </em>
+        {% elsif entry.publication_type == "Proceedings" %}
+          <em>In {{entry.booktitle}}, </em>
         {% endif %}
         {% if entry.year %}
           {% if entry.abbr %}
           <p style="font-weight:bold; display:inline;">{{entry.year}}</p>
           {% endif %}
-        {% endif %}
-      {% elsif entry.type == "inproceedings" %}
-        <em>In {{entry.booktitle}}, </em>
-        {% if entry.year %}
-          {{entry.year}}
         {% endif %}
       {% elsif entry.type == "conference" %}
         <em style="color: var(--global-theme-color);">{{entry.name}},</em> 
