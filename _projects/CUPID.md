@@ -5,7 +5,7 @@ snapshot: Searching for neutrinoless double beta decay
 description: 
 img: /assets/img/CUPID_logo.png
 importance: 3
-category: Neutrinoless Double Beta Decay 2
+category: Neutrinoless Double Beta Decay
 ---
 
 Coming soon... 

@@ -12,39 +12,18 @@ order: 4
 
 
 <div class="select_publications">
-<p>
-{% for p in page.paper_types %}
-     {{p}}: {% bibliography_count -f papers -q @*[publication_type={{p}}]* %} &nbsp;&nbsp;&nbsp;
-{% endfor %}
-</p>
-</div>
-
-<div class="publications">
-{% for p in page.paper_types %}
-    <h2 class="year">{{p}}</h2>
-    {% bibliography -f papers -q @*[publication_type={{p}}]* %}
-{% endfor %}
-</div>
-
-
-<!-- <div class="publications">
   <p>
-    {% for p in {{site.data.projects}} %}
-      <abbr class="listbadge"><a href="{{p[1].url}}">{{p[0]}}</a></abbr>
-    {% endfor %}
+  {% for p in page.paper_types %}
+     {{p}}: {% bibliography_count -f papers -q @*[publication_type={{p}}]* %} &nbsp;&nbsp;&nbsp;
+  {% endfor %}
   </p>
 </div>
 
 <div class="publications">
-  {% for p in {{site.data.projects}} %}
-    <a href="{{p[1].url}}" class="badge badge-primary">{{p[0]}} 
-      <span class="badge badge-light">{%bibliography_count -f papers -q @*[abbr={{p[0]}}]* %}</span>
-    </a>
+  {% for p in page.paper_types %}
+    <h2 class="year">{{p}}</h2>
+      <br> 
+      <br> 
+    {% bibliography -f papers -q @*[publication_type={{p}}]* %}
   {% endfor %}
 </div>
-
-<div class="publications">
-  {% for p in {{site.data.projects}} %}
-    {%bibliography_count -f papers -q @*[abbr={{p[0]}}]* %}
-  {% endfor %}
-</div> -->

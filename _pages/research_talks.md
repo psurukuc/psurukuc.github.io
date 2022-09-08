@@ -15,9 +15,11 @@ order: 3
     {% endfor %}
   </p>
 </div>
+
 <div class="publications">
 {% for t in page.types %}
   <h2 class="year">{{t}}</h2>
+    <br> 
   {% bibliography -f talks -q @*[abbr={{t}}]* %}
 {% endfor %}
 </div>

@@ -7,14 +7,28 @@ img: /assets/img/PROSPECT_logo.png
 importance: 4
 category: Reactor Neutrinos
 ---
+<a href="#science">The Science</a>
+<a href="#reactors">Reactor neutrinos</a>
+<a href="#opening">The Science</a>
+
+My graduate thesis work was to search for sterile neutrinos using reactors as the source. 
+
+<div class="publications">
+<h3 id=science class="section">The Science</h3>
+</div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-10" src="{{ '/assets/img/PROSPECT_yo.png' | relative_url }}" alt="PROSPECT assembly" title="PROSPECT inner detector assembly"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/PROSPECT_yo.png' | relative_url }}" alt="PROSPECT assembly" title="Assembled PROSPECT inner detector"/>
     </div>
 </div>
 <div class="caption">
-    Me pointing to the fully assembled inner detector subsystem of the PROSPECT experiment. 
+    Me with the PROSPECT inner detector after its assembly
 </div>
+
+You can also put regular text between your rows of images.
+Say you wanted to write a little bit about your project before you posted the rest of the images.
+You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -25,24 +39,11 @@ category: Reactor Neutrinos
     </div>
 </div>
 <div class="caption">
-    Check this stop-motion video to get a sense how we performed PROSPECT innner detector's assembly.
+    A stop-motion video showing how we performed PROSPECT innner detector's assembly
 </div>
+<a href="#top">Top</a>
 
-<!-- You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
+<h3 id=reactors class="section">Reactor neutrinos</h3>
 
 
 <div class="row justify-content-sm-center">
@@ -72,4 +73,6 @@ Here's the code for the last row of images above:
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
     </div>
 </div>
-``` -->
+``` 
+
+<p id="opening">Hyperlinks are utilized by a web browser to move from one page to another...</p>

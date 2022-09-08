@@ -81,7 +81,20 @@ blockquote {
     }
   }
   .project {
-    width: 15%;
+    img {
+      height: 3cm;
+      opacity: 1.0;
+    }
+    a {
+      text-decoration: none;
+  
+      &:hover {
+        img {
+          height: 4cm;
+          opacity: 1.0;
+        }
+      }
+    }
   }
 }
 
@@ -375,7 +388,7 @@ footer.sticky-bottom {
       color: $grey-color-dark;
     }
     color: $grey-color-dark;
-    height: 5cm;
+    min-height: 5cm;
   }
 
   .card-item {
@@ -429,6 +442,14 @@ footer.sticky-bottom {
     margin-top: 2rem;
     margin-bottom: -2rem;
     text-align: right;
+  }
+  h3.section {
+    color: var(--global-theme-color);
+    border-top: 1px solid $grey-color;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
   }
   ol.bibliography {
     list-style: none;

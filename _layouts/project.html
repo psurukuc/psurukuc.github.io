@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
 
-  <header class="post-header">
+  <header class="post-header" style="height:3cm">
     <div class="project float-right">
       {% if page.img %}  
         {% if page.title=="CUORE and CUPID" %}
@@ -12,6 +12,7 @@ layout: default
         {% else %}
         <img class="img-thumbnail" src="{{ page.img | relative_url }}"  alt="{{ page.title}}">
         {% endif %}
+        </a>
       {% endif %}
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
