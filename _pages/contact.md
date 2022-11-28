@@ -13,10 +13,10 @@ profile:
 
   mailing: >
      <p>Pranava Teja Surukuchi <br>
-     Department of Physics<br>
+     Department of Physics, Wright Laboratory<br>
      Yale University<br>
      266 Whitney Ave<br>
-     New Haven, CT-06520</p>
+     New Haven, CT-06511</p>
 
 social: true  # includes social icons at the bottom of the page
 ---
