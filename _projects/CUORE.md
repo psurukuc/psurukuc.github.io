@@ -1,15 +1,12 @@
 ---
 layout: project
 title: CUORE
-description: I work on the CUORE and CUPID neutrinoless double beta decay experiments to disentagle the nature of neutrinos.
-snapshot: ks;djfklsdfgjkljsdfgkljfsglk;j
+description: CUORE and CUPID are designed to decipher the nature of neutrinos by searching for neutrinoless double beta decay process. My focus on these experiments has been to enhance the sensitivity through cosmogenic backgeround reduction and the improvement of detector resolution through noise reduction.
 img: /assets/img/CUORE_logo.png
 img2: /assets/img/CUPID_logo.png
 importance: 2
 category: Neutrinoless Double Beta Decay
 ---
-
-CUORE and CUPID are designed to decipher the nature of neutrinos by searching for neutrinoless double beta decay process. My focus on these experiments has been to enhance their sensitivity  by (i) improving the detector resolution by mitigating sources of noise (ii) reducing backgrounds by tagging cosmogenic backgrounds.
 
 \ndbd~is an exceedingly rare process---much longer than the age of the Universe---requiring experiments with extremely low backgrounds and a superior detector resolution.
 The Cryogenic Underground Observatory for Rare Events~(CUORE) experiment, a world leading low-background \ndbd~search experiment, has been collecting data since 2017 and recently placed the best limits on the half-life of $^{130}$Te isotope~\cite{CUORE_1}.
