@@ -8,7 +8,7 @@ description: <span class="font-weight-bold"> Postdoctoral Research Associate </s
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: /Profile/prof_pic.jpg
   # address: >
   #   <p>Wright Laboratory, Physics Department</p>
   #   <p>Yale University</p>

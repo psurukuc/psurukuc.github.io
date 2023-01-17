@@ -84,6 +84,10 @@ blockquote {
     img {
       height: 3cm;
       opacity: 1.0;
+      &:hover {
+        height: 4cm;
+        opacity: 1.0;
+      }
     }
     a {
       text-decoration: none;
