@@ -210,6 +210,18 @@ blockquote {
   color: var(--global-text-color);
 }
 
+.news{
+  background-color: var(--global-code-bg-color);
+  font-size: 1rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 15px;
+  h2 {
+    padding-top: 2rem;
+  }
+}
 // Social (bottom)
 
 .social {
