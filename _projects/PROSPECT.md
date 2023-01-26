@@ -18,7 +18,7 @@ My graduate thesis work was to search for sterile neutrinos using reactors as th
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/PROSPECT_yo.png' | relative_url }}" alt="PROSPECT assembly" title="Assembled PROSPECT inner detector"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Work/PROSPECT_yo.png' | relative_url }}" alt="PROSPECT assembly" title="Assembled PROSPECT inner detector"/>
     </div>
 </div>
 <div class="caption">
@@ -43,8 +43,9 @@ You describe how you toiled, sweated, *bled* for your project, and then... you r
 </div>
 <a href="#top">Top</a>
 
+<div class="publications">
 <h3 id=reactors class="section">Reactor neutrinos</h3>
-
+</div>
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
