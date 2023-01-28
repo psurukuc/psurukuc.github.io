@@ -14,41 +14,17 @@ horizontal: false
 My research interests lie at the intersection of particle and nuclear physics with a focus on understanding the fundmental properties of neutrinos.
 </p>
 
-<p>
-My current research is driven primarily by the following questions:
+<div style="white-space: pre">My current research is driven primarily by the following questions:
 What is the mass of neutrinos?
 How do they acquires their mass?
 
+</div>
+
 <p>
 I have also spent a substantial part of my research career studying reactor neutrinos. 
-I have investigated the possibility of the existence of additional neutrino flavors in addition to the already known three neutrino flavors. Conversly, I have also into using reactor neutrinos to better understand the nuclear physics associated with reactors.
+I have used reactors to investigate the existence of additional neutrino flavors in addition to the already known three neutrino flavors. 
+Conversly, I have studies the use of neutrinos to better understand the nuclear physics associated with reactors.
 </p>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Work/CC_hut.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Work/CC_hut.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Work/CC_hut.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Work/CC_hut.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Work/CC_hut.jpg' | relative_url }}" alt="" title="example image"/>
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Work/CC_hut.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
 
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}

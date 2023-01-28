@@ -7,9 +7,9 @@ img: /assets/img/Work/PROSPECT_logo.png
 importance: 4
 category: Reactor Neutrinos
 ---
-<!-- <a href="#science">The Science</a> <br>
+<a href="#science">The Science</a> <br>
 <a href="#reactors">Reactor neutrinos</a><br>
-<a href="#opening">The Science</a><br> -->
+<a href="#opening">The Opening</a><br>
 
 My graduate thesis work was to search for sterile neutrinos using reactors as the source. 
 

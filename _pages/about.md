@@ -24,11 +24,11 @@ Hello, thanks for stopping by! :wave: My name is Pranava. I am Postdoctoral Rese
 
 I am currently working on unlocking the mass of neutrinos along two parallel paths:
 1. Measuring the mass of neutrinos with the [Project 8](https://www.project8.org/) experiment 
-2. Searching for neutrinoless double beta decay with the [CUORE](https://cuore.lngs.infn.it/) and [CUPID](https://cupid.lngs.infn.it) experiments.
+2. Searching for neutrinoless double beta decay (0νββ) with the [CUORE](https://cuore.lngs.infn.it/) and [CUPID](https://cupid.lngs.infn.it) experiments.
 
 On the [Project 8](/projects/P8), I am leading the antenna design and the event reconstruction efforts on the upcoming phase of the experiment. 
-On [CUORE](/projects/CUORE) experiment, I have led the design of the muon veto system that will eventually be used for CUPID. 
-I am also currently working on understanding the sources of resolution degradation to improve the sensitivity of the [CUPID](/projects/CUPID) experiment.  
+On [CUORE](/projects/CUORE) experiment, I have worked on estimating the high level efficiencies in [search](https://doi.org/10.1038/s41586-022-04497-4) for 0νββ and am currenlty leading the data production and high-level analyses for an improved search.
+In order to improve the sensitivity to 0νββ with the upcoming [CUPID](/projects/CUPID) experiment, I have led the design of the muon veto system for background reduction and I am currently working on improving the energy resolution through noise reduction.
 
 I got my Ph.D. from Illinois Institute of Technology, Chicago working on the [PROSPECT](https://prospect.yale.edu/) reactor neutrino experiment leading the design, fabrication, QA, and assembly of the inner detector [subsystem](https://doi.org/10.1088/1748-0221/14/04/P04014) and led its [first sterile neutrino search](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.251801). Find more about [PROSPECT](/projects/PROSPECT/) and my [work](/projects/reactor) on reactor neutrinos.
 
