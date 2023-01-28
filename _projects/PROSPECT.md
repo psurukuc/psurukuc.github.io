@@ -7,9 +7,9 @@ img: /assets/img/Work/PROSPECT_logo.png
 importance: 4
 category: Reactor Neutrinos
 ---
-<a href="#science">The Science</a>
-<a href="#reactors">Reactor neutrinos</a>
-<a href="#opening">The Science</a>
+<!-- <a href="#science">The Science</a> <br>
+<a href="#reactors">Reactor neutrinos</a><br>
+<a href="#opening">The Science</a><br> -->
 
 My graduate thesis work was to search for sterile neutrinos using reactors as the source. 
 
@@ -25,9 +25,6 @@ My graduate thesis work was to search for sterile neutrinos using reactors as th
     Me with the PROSPECT inner detector after its assembly
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
 
 
 <div class="row">

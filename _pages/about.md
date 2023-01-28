@@ -20,14 +20,17 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello, thanks for stopping by! :wave: My name is Pranava. I am Postdoctoral Research Associate at Yale University working on detemining the properties of [neutrinos](/sub/resources_neutrinos)--the least understood fundamental particles.
+Hello, thanks for stopping by! :wave: My name is Pranava. I am Postdoctoral Research Associate at [Wright Laboratory](https://wlab.yale.edu/) at Yale University working on detemining the properties of [neutrinos](/sub/resources_neutrinos)--the least understood fundamental particles.
 
-I got my Ph.D. from Illinois Institute of Technology, Chicago working on the [PROSPECT](https://prospect.yale.edu/) reactor neutrino experiment leading the design, fabrication, QA, and assembly of the inner detector [subsystem](https://doi.org/10.1088/1748-0221/14/04/P04014) and led its [first sterile neutrino search](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.251801). Find more about [PROSPECT](/projects/PROSPECT/) and my [work](/projects/reactor) on reactor neutrinos.
+I am currently working on unlocking the mass of neutrinos along two parallel paths:
+1. Measuring the mass of neutrinos with the [Project 8](https://www.project8.org/) experiment 
+2. Searching for neutrinoless double beta decay with the [CUORE](https://cuore.lngs.infn.it/) and [CUPID](https://cupid.lngs.infn.it) experiments.
 
-I then joined the [Wright Laboratory](https://wlab.yale.edu/) at Yale University as a postdoc working on the [Project 8](https://www.project8.org/) neutrino mass experiment and [CUORE](https://cuore.lngs.infn.it/) and [CUPID](https://cupid-i.lngs.infn.it/doku.php?id=cupid_pub:start/) neutrinoless double beta decay experiments while continuing to work on the PROSPECT experiment. 
-On the [Project 8](/projects/P8), I am leading the antenna design and the event reconstruction efforts on the upcoming Phase of the experiment. 
+On the [Project 8](/projects/P8), I am leading the antenna design and the event reconstruction efforts on the upcoming phase of the experiment. 
 On [CUORE](/projects/CUORE) experiment, I have led the design of the muon veto system that will eventually be used for CUPID. 
 I am also currently working on understanding the sources of resolution degradation to improve the sensitivity of the [CUPID](/projects/CUPID) experiment.  
+
+I got my Ph.D. from Illinois Institute of Technology, Chicago working on the [PROSPECT](https://prospect.yale.edu/) reactor neutrino experiment leading the design, fabrication, QA, and assembly of the inner detector [subsystem](https://doi.org/10.1088/1748-0221/14/04/P04014) and led its [first sterile neutrino search](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.251801). Find more about [PROSPECT](/projects/PROSPECT/) and my [work](/projects/reactor) on reactor neutrinos.
 
 
 <!-- This wesbite is currenlty under construction but soon it will contain information on my research interests, teaching, and other interests.
