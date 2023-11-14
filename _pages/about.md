@@ -20,7 +20,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello, :wave: My name is Pranava. I am an Assitant Professor in the Department of Physics and Astronomy at University of Pittsburgh. My research is in experimental particle physics with a focus on determining the properties of 
+Hello, :wave: My name is Pranava. I am an Assistant Professor in the Department of Physics and Astronomy at University of Pittsburgh. My research is in experimental particle physics with a focus on determining the properties of 
 neutrinos
 <!-- [neutrinos](/sub/resources_neutrinos) -->
 --the least understood fundamental particles. I am particularly intereted in the most important unanswered questions in the Standard Model of Particles,
