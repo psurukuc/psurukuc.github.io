@@ -1,17 +1,19 @@
 ---
-layout: about
-title: about
-order: 1
-permalink: /
-# description: <span class="font-weight-bold"> Assistant Professor of Physics </span> in the <a href="https://www.physicsandastronomy.pitt.edu/">Department of Physics and Astronomy</a> at <a href="https://www.pitt.edu/">University of Pittsburgh</a>.
+layout: self
+title: Surukuchi
+order: 2
+permalink: /surukuchi
+nav: true
+description: <span class="font-weight-bold"> Assistant Professor of Physics </span> in the <a href="https://www.physicsandastronomy.pitt.edu/">Department of Physics and Astronomy</a> at <a href="https://www.pitt.edu/">University of Pittsburgh</a>.
+# Previously a graduate student at <a href="https://www.iit.edu/physics">Illinois Institute of Technology</a>.
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
-
-# profile:
-#   align: right
-#   image: Headshot_Yale.jpg
+profile:
+  align: right
+  image: Headshot_Yale.jpg
+  address: 
+    Department of Physics and Astronomy<br>
+    417 Allen Hall<br>
+    Pittsburgh, PA 15260</p>
 ---
 
 Hello, :wave: My name is Pranava. I am an Assistant Professor in the Department of Physics and Astronomy at University of Pittsburgh. My research is in experimental particle physics with a focus on determining the properties of 
@@ -27,5 +29,3 @@ We are performing some of the world leading searches for neutrinoless double bet
 
 I got my Ph.D. from Illinois Institute of Technology, Chicago working on [PROSPECT](https://prospect.yale.edu/) reactor neutrino experiment where I led the detector fabrication and subsequently its first search for sterile neutrinos.
 I then joined the [Wright Laboratory](https://wlab.yale.edu/) at Yale University as a Postdoctoral Research Associate.
-
-**I am currently looking for motivated graduate students and postdocs** to work with me on these really cool experiments. [contact](Contact) me if you are interested to work with me or learn more about my work or neutrinos.

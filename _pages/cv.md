@@ -3,8 +3,8 @@ layout: contact
 permalink: /cv/
 title: CV
 description:
-nav: true
-order: 6
+nav: false
+order: 7
 ---
 
 <div class="social" >

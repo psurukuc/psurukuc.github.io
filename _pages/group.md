@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /research_talks/
-title: Talks 
+permalink: /group/
+title: Group
 # description: List of talks and presentattions arranged in reverse chronological order
-types: ["Invited","Conference","Poster"]
+# types: ["Invited","Conference","Poster"]
 nav: true
-order: 5
+order: 4
 ---
 
 <div class="select_publications">
