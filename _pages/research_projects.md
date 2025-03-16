@@ -4,7 +4,7 @@ title: Research Projects
 permalink: /research_projects/
 # description: My interest is neutrinos...
 nav: true
-order: 3
+order: 4
 # display_categories: [collaboration, fun]
 display_categories: [Neutrino Mass, Neutrinoless Double Beta Decay, Reactor Neutrinos]
 horizontal: false

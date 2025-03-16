@@ -49,7 +49,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 gitlab_username: # your GitLab user name
 # twitter_username: pranava_teja # your Twitter handle
 # linkedin_username: surukuchi # your LinkedIn user name
-scholar_userid: fsKDfDUAAAAJ # your Google Scholar ID
+# scholar_userid: fsKDfDUAAAAJ # your Google Scholar ID
 orcid_id: 0000-0002-7858-0370 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -62,7 +62,7 @@ wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 spires_id: 1409393
-# github_username: psurukuc # your GitHub user name
+github_username: surukuchi-lab # your GitHub user name
 
 rss_icon: false
 

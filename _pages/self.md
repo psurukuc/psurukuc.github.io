@@ -1,9 +1,9 @@
 ---
 layout: self
 title: Surukuchi
-order: 2
+order: 10
 permalink: /surukuchi
-nav: true
+nav: false
 description: <span class="font-weight-bold"> Assistant Professor of Physics </span> in the <a href="https://www.physicsandastronomy.pitt.edu/">Department of Physics and Astronomy</a> at <a href="https://www.pitt.edu/">University of Pittsburgh</a>.
 # Previously a graduate student at <a href="https://www.iit.edu/physics">Illinois Institute of Technology</a>.
 

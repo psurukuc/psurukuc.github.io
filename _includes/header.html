@@ -5,12 +5,13 @@
     <div class="container">
       {% if page.title != "about" %}
       <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/">
-       {% if site.title == "blank" %}<span class="font-weight-bold">{{ site.last_name }}</span> group {% else %}{{ site.title }}{% endif %}
+       {% if site.title == "blank" %}<span class="font-weight-bold" style="color:var(--global-theme-color)">{{ site.last_name }}</span> group {% else %}{{ site.title }}{% endif %}
       </a>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">
-          {% include social.html %}
+          <!-- {% include social.html %} -->
+          {% include pitt_logo.html %}
         </div>
       {% endif %}
       <!-- Navbar Toggle -->
@@ -77,7 +78,7 @@
           </li>
           {% endif %}
           {% if site.enable_darkmode %}
-            <div class = "toggle-container">
+            <div class = "toggle-container" style="color:var(--global-theme-color)">
               <a id = "light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
