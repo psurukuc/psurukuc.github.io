@@ -471,6 +471,7 @@ footer.sticky-bottom {
       }
       .title {
         font-weight: bolder;
+        color: var(--global-text-color-light);
       }
       .author {
         a {
@@ -488,13 +489,13 @@ footer.sticky-bottom {
       .links {
         a.btn {
           color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
+          border: 1px solid var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           &:hover {
-            color: var(--global-theme-color);
+            color: var(--global-text-color-light);
             border-color: var(--global-theme-color);
           }
         }
@@ -559,7 +560,7 @@ footer.sticky-bottom {
   }
   p {
     font-size: 1em;
-    color: var(--global-text-color-light);
+    color: var(--global-theme-color);
   }
 }
 
@@ -574,6 +575,27 @@ footer.sticky-bottom {
   border-radius: 15px;
   h2 {
     padding-top: 2rem;
+  }
+  p {
+    font-size: 1em;
+    color: var(--global-theme-color);
+  }
+}
+
+.pooled_publications {
+  background-color: var(--global-code-bg-color);
+  font-size: 1rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-radius: 15px;
+  h2 {
+    padding-top: 2rem;
+  }
+  p {
+    font-size: 1em;
+    color: var(--global-text-color-light);
   }
 }
 

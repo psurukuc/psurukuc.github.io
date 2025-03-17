@@ -44,10 +44,22 @@ layout: default
 
   <div class="mySlides fade">
     <img src="/assets/img/Snowmass_nuPresentation.jpg" style="width:100%">
+    <div class="text">Project 8 Spring 2025 collaboration meeting held at Pitt</div>
   </div>
 
   <div class="mySlides fade">
     <img src="/assets/img/prof_pic.jpg" style="width:100%">
+    <div class="text">Tristan testing pulse tubes for CUPID</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="/assets/img/prof_pic.jpg" style="width:100%">
+    <div class="text">Group photo Pitt-CoRTEx</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="/assets/img/prof_pic.jpg" style="width:100%">
+    <div class="text">Pranava presenting at APS DNP</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -61,6 +73,8 @@ layout: default
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
 </div>
 
 <script>
@@ -98,7 +112,7 @@ function showSlides() {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  max-width: 80%;
+  max-width: 50%;
   margin: auto;
 }
 
@@ -199,10 +213,13 @@ function showSlides() {
     </div>
     {% endif %} -->
 
-
+    <div class="select_publications">
+      <p>
     {% if page.selected_papers %}
       {% include selected_papers.html %}
     {% endif %}
+  </p>
+  </div>
 
     {% if page.social %}
     <div class="social">

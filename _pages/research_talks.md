@@ -8,13 +8,14 @@ nav: true
 order: 5
 ---
 
-<div class="select_publications">
+<div class="pooled_publications">
   <p>
     {% for t in page.types %}
      {{t}}: {% bibliography_count -f talks -q @*[abbr={{t}}]*  %} &nbsp;&nbsp;&nbsp; 
     {% endfor %}
   </p>
 </div>
+
 <div class="publications">
 {% for t in page.types %}
   <h2 class="year">{{t}}</h2>
