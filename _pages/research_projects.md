@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Research Projects
+title: Research
 permalink: /research_projects/
 # description: My interest is neutrinos...
 nav: true
@@ -10,7 +10,10 @@ display_categories: [Neutrino Mass, Neutrinoless Double Beta Decay, Reactor Neut
 horizontal: false
 ---
 
-My research interests lie at the intersection of particle and nuclear physics with a focus on neutrinos. I am interested in understanding the fundmental properties of neutrinos including their mass, how they acquires their mass and whether there are other undiscovered neutrino flavors.
+<p> My group’s research focuses on understanding the fundamental properties of neutrinos, with particular emphasis on their mass and the mechanisms by which they acquire it.
+Neutrinos are the only fundamental particles with unknown mass, making them a unique window into physics beyond the Standard Model. Their tiny, yet nonzero mass has profound implications for our understanding of the universe, influencing the evolution of large-scale cosmic structures and offering clues about the early universe, the nature of mass generation, and potential extensions to current particle physics theories.
+</p>
+<!--  -->
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->

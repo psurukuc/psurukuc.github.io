@@ -1,8 +1,10 @@
 ---
 layout: project
 title: PROSPECT
-description: PROSPECT is a short baseline reactor antineutrino experiment with precisely measure reactor antineutrino spectrum and perform sterile neutrino induced oscillation searches. I led the R&D and assembly of optical reflector subsystem on the experiment. I also spear-headed the experiment's first sterile neutrino oscillation search.
+description: PROSPECT is a short baseline reactor antineutrino experiment with precisely measure reactor antineutrino spectrum and perform sterile neutrino induced oscillation searches. While our group is not part of the experiment, Pranava played an important role on the experiment during his Ph.D. and postdoc.
+#  led the R&D and assembly of optical reflector subsystem on the experiment. I also spear-headed the experiment's first sterile neutrino oscillation search.
 snapshot: Reactor neutrinos to search for sterile neutrinos
+permalink: /projects/PROSPECT/
 img: /assets/img/PROSPECT_logo.png
 importance: 4
 category: Reactor Neutrinos

@@ -10,7 +10,6 @@ order: 2
 
 
 
-
 <!-- 
 ---
 layout: self
@@ -30,5 +29,32 @@ profile:
     Pittsburgh, PA 15260</p>
 --- -->
 
-I got my Ph.D. from Illinois Institute of Technology, Chicago working on [PROSPECT](https://prospect.yale.edu/) reactor neutrino experiment where I led the detector fabrication and subsequently its first search for sterile neutrinos.
-I then joined the [Wright Laboratory](https://wlab.yale.edu/) at Yale University as a Postdoctoral Research Associate.
+## Pranava Teja Surukuchi
+**Assistant Professor**
+
+<div class="row">
+  <div class="col-sm-4">
+    <img class="img-fluid rounded z-depth-1" src="{{ site.baseurl }}/assets/img/Headshot_Yale.jpg" alt="Pranava Teja Surukuchi">
+  </div>
+  <div class="col-sm-8">
+    <p>My research interests span experimental neutrino physics, rare event searches, and detector development. I am particularly interested in understanding the fundamental properties of neutrinos and their role in physics beyond the Standard Model. Currently, I lead research efforts on Project 8, <a href="https://cuore.lngs.infn.it/">CUORE</a>, <a href="https://cupid.lngs.infn.it/">CUPID</a>, and <a href="https://www.project8.org/"> Project 8</a>.</p>
+    
+    <p>I got my Ph.D. from Illinois Institute of Technology, Chicago working on <a href="https://prospect.yale.edu/">PROSPECT</a> reactor neutrino experiment where I led the detector fabrication and subsequently its first search for sterile neutrinos.
+    I then joined the <a href="https://wlab.yale.edu/">Wright Laboratory</a> at Yale University as a Postdoctoral Research Associate shifting my research focus neutrino mass related physics.</p>
+  </div>
+</div>
+
+---
+<!-- <div class="row">
+  <div class="col-sm-8">
+    <p>I got my Ph.D. from Illinois Institute of Technology, Chicago working on <a href="https://prospect.yale.edu/">PROSPECT</a> reactor neutrino experiment where I led the detector fabrication and subsequently its first search for sterile neutrinos.
+    I then joined the <a href="https://wlab.yale.edu/">Wright Laboratory</a> at Yale University as a Postdoctoral Research Associate.</p>
+
+    <p>At Yale, I worked on the <a href="https://cuore.lngs.infn.it/">CUORE</a> experiment, a large-scale cryogenic detector searching for neutrinoless double-beta decay. My research focused on detector characterization, data analysis, and background reduction techniques. I also contributed to the development of the next-generation <a href="https://cupid.lngs.infn.it/">CUPID</a> experiment, which aims to achieve even greater sensitivity in the search for this rare nuclear process.</p>
+
+    <p>My research interests span experimental neutrino physics, rare event searches, and detector development. I am particularly interested in understanding the fundamental properties of neutrinos and their role in physics beyond the Standard Model. Currently, I lead research efforts on Project 8, CUORE/CUPID, and other neutrino experiments, while also developing new detector technologies and analysis techniques.</p>
+  </div>
+  <div class="col-sm-4">
+    <img class="img-fluid rounded z-depth-1" src="{{ site.baseurl }}/assets/img/Headshot_Yale.jpg" alt="Pranava Teja Surukuchi">
+  </div>
+</div> -->

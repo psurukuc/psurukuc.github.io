@@ -5,7 +5,7 @@ title: Publications
 # description: List of publications by reverse chronological order. Authors are typically listed in the alphabetical order of the last names.
 # years: [2021, 2020, 2019, 2018, 2016, 2015]
 current_year: 2025
-paper_types: [Thesis, Refereed, Preprint, Proceedings]
+paper_types: [Thesis, Refereed, Under Review, Preprint, Proceedings]
 nav: true
 order: 6
 ---

@@ -3,7 +3,8 @@ layout: contact
 title: Contact
 permalink: /contact/
 description: 
-nav: false
+
+nav: true
 order: 7
 social: true  # includes social icons at the bottom of the page
 
