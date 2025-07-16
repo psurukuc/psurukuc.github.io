@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Our group presents at APS DNP 2024
-date: 2024-10-07 15:59:00-0400
+title: Adil presents at Pheno 2025
+date: 2025-05-21
 nav: false
 inline: false
 ---
 
-Pranava Teja Surukuchi gave an invited talk about CUORE and CUPID experiments at the <a href="https://web.mit.edu/dnp2024/">APS DNP</a> conference held in Boston on October 7--10, 2024.
+Ehteshamul (Adil) Karim gave a talk about Project 8 reconstruction techniques at the <a href="https://www.pheno2025.org/">Pheno 2025</a> conference held in Pittsburgh on May 19--21, 2025.
 
 <!-- <div class="row mt-3">
     <div class="col-md mt-3 mt-md-0">
@@ -25,17 +25,8 @@ Pranava Teja Surukuchi gave an invited talk about CUORE and CUPID experiments at
 
 
 <div class="row mt-3">
-    <div class="col-md mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ site.baseurl }}/assets/img/DNP2024.png" data-zoomable style="height: 400px; object-fit: cover;">
-        <div class="caption">
-            Pranava Teja Surukuchi giving an invited talk on the status and updates on CUORE and CUPID at APS DNP 2024
-        </div>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ site.baseurl }}/assets/img/Brent_DNP2024.jpeg" data-zoomable style="height: 400px; object-fit: cover;">
-        <div class="caption">
-            Brent's presentation on Pitt-CoRTEx at the DNP CEU 2024 conference
-        </div>
+    <img class="img-fluid rounded z-depth-1" src="{{ site.baseurl }}/assets/img/Adil_PHENO.jpeg" data-zoomable style="object-fit: cover;">
+    <div class="caption">
     </div>
 </div>
 

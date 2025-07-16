@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pitt group hosts the 26th Project 8 collaboration meeting
+title: Pitt group hosts the Project 8 Spring Collaboration Meeting
 date: 2025-03-03 16:11:00-0400
 inline: false
 ---

@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="post">
 
   <header class="post-header">
@@ -15,19 +14,6 @@ layout: default
     {{ content }}
   </div>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   
 <!-- ...existing code... -->
@@ -198,26 +184,17 @@ function showSlides() {
 
 
 
-
-
 <!-- News -->
 {% if page.news%}
   <h2>
-    <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+    <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
   </h2>
   {% include news.liquid limit=true %}
 {% endif %}
 
-
-
-
-
-
-
-
+<div style="margin-bottom: 40px;"></div>
   
 
-  <article>
     <!-- {% if page.profile %}
     <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
       {% if page.profile.image %}
@@ -226,12 +203,13 @@ function showSlides() {
     </div>
     {% endif %} -->
 
-    <div class="select_publications">
-      <p>
     {% if page.selected_papers %}
+    <h2>
+      <a href="{{ '/research_publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
+    </h2>
+    <div class="select_publications">
       {% include selected_papers.html %}
     {% endif %}
-  </p>
   </div>
 
     {% if page.social %}
@@ -242,6 +220,8 @@ function showSlides() {
       <div class="contact-note">{{ site.contact_note }}</div>
     </div>
     {% endif %}
-  </article>
+
+  <!-- <article>
+  </article> -->
 
 </div>
