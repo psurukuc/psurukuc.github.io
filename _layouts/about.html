@@ -74,6 +74,7 @@ layout: default
   <span class="dot" onclick="currentSlide(5)"></span> 
   <span class="dot" onclick="currentSlide(6)"></span> 
   <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
 </div>
 
 <script>
@@ -88,36 +89,53 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides() {
+function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
+  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+  
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 10 seconds
+  
+  // Auto-advance slides
+  setTimeout(function() {
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    showSlides(slideIndex);
+  }, 4000);
 }
-
 </script>
 
 <style>
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  max-width: 50%;
+  max-width: 100%;
   margin: auto;
+  height: 800px;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: inline-block;
+  display: none;
+  height: 100%;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintains aspect ratio while filling the container */
 }
 
 /* Next & previous buttons */
