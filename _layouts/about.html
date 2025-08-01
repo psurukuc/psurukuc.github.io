@@ -18,11 +18,19 @@ layout: default
     <div class="slideshow-container">
       {% for image in site.data.slideshow.images %}
       <div class="mySlides fade">
-        <img src="{{ '/assets/img/' | append: image.src | relative_url }}" alt="{{ image.caption }}">
+        <img src="{{ '/assets/img/' | append: image.src | relative_url }}" 
+             alt="{{ image.caption }}"
+             loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+             decoding="async">
         <div class="slide-caption">
           <div class="caption-content">{{ image.caption }}</div>
         </div>
       </div>
+      {% endfor %}
+
+      <!-- Preload next few images -->
+      {% for image in site.data.slideshow.images limit:3 offset:1 %}
+      <link rel="preload" as="image" href="{{ '/assets/img/' | append: image.src | relative_url }}">
       {% endfor %}
 
       <!-- Next and previous buttons -->
@@ -41,7 +49,7 @@ layout: default
     <!-- The dots/circles - automatically generated -->
     <div class="slideshow-dots">
       {% for image in site.data.slideshow.images %}
-      <span class="dot" onclick="currentSlide({{ forloop.index }})"></span>
+      <span class="dot" data-slide="{{ forloop.index }}"></span>
       {% endfor %}
     </div>
   </div>
@@ -52,8 +60,49 @@ let slideTimer;
 
 document.addEventListener('DOMContentLoaded', function() {
   showSlides(slideIndex);
+  preloadImages();
   startAutoSlide();
+  
+  // Add click event listeners to dots
+  const dots = document.getElementsByClassName("dot");
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].addEventListener('click', function() {
+      clearTimeout(slideTimer);
+      currentSlide(i + 1);
+      startAutoSlide();
+    });
+  }
 });
+
+function preloadImages() {
+  const slides = document.getElementsByClassName("mySlides");
+  for (let i = 0; i < slides.length; i++) {
+    const img = slides[i].querySelector('img');
+    if (img && !img.complete) {
+      // Add loading event listeners
+      img.addEventListener('load', function() {
+        this.setAttribute('data-loaded', 'true');
+      });
+      
+      img.addEventListener('error', function() {
+        console.warn('Failed to load image:', this.src);
+        this.setAttribute('data-loaded', 'true'); // Still mark as "loaded" to prevent infinite loading
+      });
+      
+      // If image is already cached and loaded
+      if (img.complete) {
+        img.setAttribute('data-loaded', 'true');
+      }
+      
+      // Create a new image object to preload
+      const preloadImg = new Image();
+      preloadImg.onload = function() {
+        img.setAttribute('data-loaded', 'true');
+      };
+      preloadImg.src = img.src;
+    }
+  }
+}
 
 function plusSlides(n) {
   clearTimeout(slideTimer);
