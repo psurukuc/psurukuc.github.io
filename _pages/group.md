@@ -51,12 +51,11 @@ profile:
 ### Vivek Sharma
 **Postdoctoral Researcher working on the CUORE, CUPID, and Project 8 Experiment**
 <div class="row">
-  <div class="col-sm-4">
+  <div class="col-sm-8">
     <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/profile_placeholder.png" alt="">
   </div>
-  <div class="col-sm-8">
-    <p style="text-align: justify;">Coming soon....</p>
-    
+    <div class="col-sm-4">
+      <p style="text-align: justify;">Coming soon....</p>
   </div>
 </div>
 
@@ -106,7 +105,6 @@ profile:
 ---
 ## Undergraduate Students
 
-### Brent Clelland
 ### Kyle Mo
 **Fabrication, characterization, simulation, and track reconstruction for Pitt-CoRTEx**
 
@@ -175,11 +173,19 @@ profile:
 <hr style="border: 3px solid #ccc; margin: 30px 0;"> 
 
 ## Past members
-
+<hr style="border: 1px solid #ccc; margin: 5px 0;"> 
 <!-- #### Gregory (Greg) Kenning
 - George Washington
 * John Adams
 + Thomas Jefferson -->
+### Brent Clelland
+**Undergraduate Researcher (Summer 2024 - Summer 2025)**
+**Starting grad school at NC State**
+<p style="text-align: justify;">
+Fabrication, characterization, simulation, and track reconstruction for Pitt-CoRTEx.
+</p>
+
+
 ### Gregory (Greg) Kenning
 **Undergraduate Researcher (Fall 2024)**
 <p style="text-align: justify;">
