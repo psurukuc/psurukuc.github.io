@@ -3,7 +3,9 @@ layout: about
 title: about
 order: 1
 permalink: /
-# description: <span class="font-weight-bold"> Assistant Professor of Physics </span> in the <a href="https://www.physicsandastronomy.pitt.edu/">Department of Physics and Astronomy</a> at <a href="https://www.pitt.edu/">University of Pittsburgh</a>.
+description: "Pranava Teja Surukuchi is an Assistant Professor of Physics at University of Pittsburgh, leading cutting-edge neutrino physics research. Explore our work on neutrinoless double-beta decay, neutrinos mass, and advanced detector technologies through CUORE, CUPID, and Project 8 experiments."
+seo_title: "Pranava Teja Surukuchi - Neutrino Physics Research | University of Pittsburgh"
+keywords: "Pranava Teja Surukuchi, neutrino physics, University of Pittsburgh physics, assistant professor, CUORE, CUPID, Project 8, neutrinoless double-beta decay, neutrino mass, particle physics research"
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

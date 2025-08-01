@@ -36,11 +36,14 @@ max_width: 900px
 # TODO: add layout settings (single page vs. multi-page)
 
 # -----------------------------------------------------------------------------
-# Open Graph
+# Open Graph & SEO
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+og_image: /favicon.ico # The site-wide (default for all links) Open Graph preview image
+
+# SEO defaults
+keywords: "physics, neutrino, neutrino mass, research, university of pittsburgh, particle physics, experimental physics, CUORE, CUPID, Project 8"
 
 # -----------------------------------------------------------------------------
 # Social integration

@@ -2,7 +2,10 @@
 layout: page
 title: Group
 permalink: /group/
-## types: ["Invited","Conference","Poster"]
+description: "Meet the talented researchers in Surukuchi Lab at University of Pittsburgh. Our diverse team includes faculty, postdocs, graduate students, and undergraduates working on cutting-edge neutrino physics research including CUORE, CUPID, and Project 8 experiments."
+seo_title: "Surukuchi Lab Group - Neutrino Physics Research Team | University of Pittsburgh"
+keywords: "Surukuchi Lab, neutrino physics research, University of Pittsburgh physics, CUORE collaboration, CUPID experiment, PROSPECT detector, graduate students physics, postdoc opportunities, particle physics research group"
+# og_image: /assets/img/group_photo.jpg
 nav: true
 order: 2
 ---

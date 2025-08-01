@@ -2,7 +2,9 @@
 layout: page
 title: News
 permalink: /news/
-description: Latest updates and announcements from our research group
+description: "Stay updated with the latest news, achievements, and announcements from Surukuchi Lab. Follow our research breakthroughs, student accomplishments, conference presentations, awards, and collaborative milestones in neutrino physics research."
+seo_title: "Latest News & Updates | Surukuchi Lab Neutrino Physics Research"
+keywords: "Surukuchi Lab news, neutrino physics updates, research announcements, student achievements, conference news, physics awards, University of Pittsburgh physics news, CUORE CUPID PROSPECT updates"
 announcements:
   limit: 15
   scrollable: true

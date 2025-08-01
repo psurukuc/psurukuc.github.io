@@ -2,7 +2,9 @@
 layout: page
 title: Research
 permalink: /research_projects/
-description: Understanding the fundamental properties of neutrinos and their role in physics in and beyond the Standard Model
+# description: "Explore the cutting-edge neutrino physics research projects in Surukuchi Lab. Our work spans neutrinoless double-beta decay searches with CUORE and CUPID, reactor neutrino detection with PROSPECT, and advanced detector technologies for next-generation experiments."
+seo_title: "Research Projects - Neutrino Physics Experiments | Surukuchi Lab"
+keywords: "neutrinoless double-beta decay, CUORE, CUPID, Project 8, cryogenic detectors, neutrino mass, University of Pittsburgh physics"
 nav: true
 order: 4
 display_categories: [Neutrino Mass, Neutrinoless Double Beta Decay, Reactor Neutrinos]

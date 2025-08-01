@@ -2,7 +2,9 @@
 layout: page
 permalink: /research_talks/
 title: Talks 
-description: List of talks and presentations arranged by type in reverse chronological order
+description: "Browse scientific talks and presentations by Surukuchi Lab members. Our presentations cover neutrinoless double-beta decay, reactor neutrino physics, cryogenic detector development, and results from CUORE, CUPID, and PROSPECT experiments at international conferences and workshops."
+seo_title: "Scientific Talks & Presentations | Surukuchi Lab Neutrino Physics"
+keywords: "physics talks, neutrino conferences, CUORE presentations, CUPID talks, PROSPECT seminars, double-beta decay, particle physics presentations, University of Pittsburgh physics talks"
 types: ["Invited","Conference","Poster"]
 nav: true
 order: 5

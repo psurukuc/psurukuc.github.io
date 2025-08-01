@@ -2,8 +2,9 @@
 layout: page
 permalink: /research_publications/
 title: Publications
-# description: List of publications by reverse chronological order. Authors are typically listed in the alphabetical order of the last names.
-# years: [2021, 2020, 2019, 2018, 2016, 2015]
+description: "Comprehensive list of scientific publications from Surukuchi Lab."
+seo_title: "Publications - Neutrino Physics Research Papers | Surukuchi Lab"
+keywords: "neutrino physics publications, CUORE papers, CUPID research, Project 8 publications, neutrino mass, double-beta decay papers, particle physics research, University of Pittsburgh physics publications, peer-reviewed articles"
 current_year: 2025
 paper_types: [Thesis, Refereed, Under Review, Preprint, Proceedings]
 nav: true
