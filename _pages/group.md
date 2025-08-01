@@ -149,10 +149,10 @@ profile:
 
 <div class="row">
   <div class="col-sm-4">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/profile_placeholder.png" alt="">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/Meg_Gibbons.png" alt="">
   </div>
   <div class="col-sm-8">
-    <p style="text-align: justify;">Coming soon....</p>
+    <p style="text-align: justify;">I am a physics and mathematics undergraduate student at the University of Pittsburgh. I am currently working with data from the CUORE detector to identify and analyze the appearance of seismic events.</p>
   </div>
 </div>
 
