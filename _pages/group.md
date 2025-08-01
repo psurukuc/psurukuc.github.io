@@ -28,7 +28,8 @@ profile:
     Pittsburgh, PA 15260</p>
 --- -->
 
-## Faculty
+## 👨‍🏫 Faculty
+<div style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 
 ### Pranava Teja Surukuchi
 **Assistant Professor**
@@ -46,21 +47,23 @@ profile:
 </div>
 
 ---
-## Postdoctoral Researchers
+## 🎓 Postdoctoral Researchers
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 
 ### Vivek Sharma
 **Postdoctoral Researcher working on the CUORE, CUPID, and Project 8 Experiment**
 <div class="row">
-  <div class="col-sm-8">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/profile_placeholder.png" alt="">
-  </div>
-    <div class="col-sm-4">
+    <div class="col-sm-8">
       <p style="text-align: justify;">Coming soon....</p>
+  </div>
+  <div class="col-sm-4">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/profile_placeholder.png" alt="">
   </div>
 </div>
 
 ---
-## Graduate Students
+## 🎓 Graduate Students
+<div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 
 ### Ehteshamul (Adil) Karim
 **Ph.D. Student working on the Project 8 Experiment**
@@ -74,6 +77,7 @@ profile:
   </div>
 </div>
 
+<div style="margin-bottom: 40px;"></div>
 
 ### Tristan Hurst
 **Ph.D. Student working on the CUORE and CUPID Experiments**
@@ -87,9 +91,9 @@ profile:
   </div>
 </div>
 
-
 ---
-## Staff
+## 🛠️ Staff
+<div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 
 ### Yuvaraj Elangovan
 **Electronics Design Engineer leading Pitt-CoRTEx**
@@ -102,8 +106,10 @@ profile:
     <p style="text-align: justify;">Coming soon....</p>
   </div>
 </div>
+
 ---
-## Undergraduate Students
+## 🔬 Undergraduate Students
+<div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 
 ### Kyle Mo
 **Fabrication, characterization, simulation, and track reconstruction for Pitt-CoRTEx**
@@ -118,6 +124,8 @@ profile:
   </div>
 </div>
 
+<div style="margin-bottom: 40px;"></div>
+
 ### Vincent Niedermeyer
 **Developing generative ML algorithms for synthetic CRES event generation**
 
@@ -129,6 +137,8 @@ profile:
     <p style="text-align: justify;">Coming soon....</p>
   </div>
 </div>
+
+<div style="margin-bottom: 40px;"></div>
 
 ### Tyler Schutt
 **Developing ML algorithms for synthetic CRES event generation and track finding**
@@ -142,6 +152,8 @@ profile:
   </div>
 </div>
 
+<div style="margin-bottom: 40px;"></div>
+
 ### Megan (Meg) Gibbons
 **Investigating seismic detection capabilities of the CUORE detector**
 
@@ -154,6 +166,7 @@ profile:
   </div>
 </div>
 
+<div style="margin-bottom: 40px;"></div>
 
 ### Sean Maloney
 **Working on monitoring software and detector support structures for Pitt-CoRTEx**
@@ -172,29 +185,33 @@ profile:
 <!-- --- -->
 <hr style="border: 3px solid #ccc; margin: 30px 0;"> 
 
-## Past members
-<hr style="border: 1px solid #ccc; margin: 5px 0;"> 
+## 📚 Past members
+<div style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+---
 <!-- #### Gregory (Greg) Kenning
 - George Washington
 * John Adams
 + Thomas Jefferson -->
+
 ### Brent Clelland
-**Undergraduate Researcher (Summer 2024 - Summer 2025)**
-**Starting grad school at NC State**
+*Undergraduate Researcher (Summer 2024 - Summer 2025)* | **Starting grad school at NC State**
 <p style="text-align: justify;">
 Fabrication, characterization, simulation, and track reconstruction for Pitt-CoRTEx.
 </p>
 
+<div style="margin-bottom: 40px;"></div>
 
 ### Gregory (Greg) Kenning
-**Undergraduate Researcher (Fall 2024)**
+*Undergraduate Researcher (Fall 2024)*
 <p style="text-align: justify;">
 <!-- Greg is a 21-year-old Junior Materials Science Engineering Major at the University of Pittsburgh. He completed his bachelor's in physics at the University of Pennsylvania in 2024. He has worked with a number of groups on projects including SRF Cavities for Cornell's electron beam, and Ensemble DFT calculation at UC Merced. In our group, h -->
 Investigated the possibility of using SQUIDs as accelerometers for CUORE/CUPID.
 </p>
 
+<div style="margin-bottom: 40px;"></div>
+
 ### Zoe Fitzsimmons 
-**Undergraduate Researcher (Summer 2024)**
+*Undergraduate Researcher (Summer 2024)*
 <p style="text-align: justify;">
 <!-- Greg is a 21-year-old Junior Materials Science Engineering Major at the University of Pittsburgh. He completed his bachelor's in physics at the University of Pennsylvania in 2024. He has worked with a number of groups on projects including SRF Cavities for Cornell's electron beam, and Ensemble DFT calculation at UC Merced. In our group, h -->
 Automated data taking for Pitt-CoRTEx.
