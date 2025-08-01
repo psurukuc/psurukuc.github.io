@@ -123,7 +123,7 @@ document.querySelector('.slideshow-container').addEventListener('mouseleave', fu
         📰 Latest News
       </a>
     </h2>
-    <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); height: 3px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+    <div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 3px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
     {% include news.liquid limit=true %}
   </section>
   {% endif %}
@@ -136,7 +136,7 @@ document.querySelector('.slideshow-container').addEventListener('mouseleave', fu
         📚 Selected Publications
       </a>
     </h2>
-    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 3px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+    <div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 3px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
     <div class="select_publications">
       {% include selected_papers.html %}
     </div>

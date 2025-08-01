@@ -2,7 +2,6 @@
 layout: page
 title: Group
 permalink: /group/
-## description: List of talks and presentattions arranged in reverse chronological order
 ## types: ["Invited","Conference","Poster"]
 nav: true
 order: 2
@@ -29,7 +28,7 @@ profile:
 --- -->
 
 ## 👨‍🏫 Faculty
-<div style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+<div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 
 ### Pranava Teja Surukuchi
 **Assistant Professor**
@@ -48,7 +47,7 @@ profile:
 
 ---
 ## 🎓 Postdoctoral Researchers
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+<div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 
 ### Vivek Sharma
 **Postdoctoral Researcher working on the CUORE, CUPID, and Project 8 Experiment**
@@ -63,7 +62,7 @@ profile:
 
 ---
 ## 🎓 Graduate Students
-<div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+<div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 
 ### Ehteshamul (Adil) Karim
 **Ph.D. Student working on the Project 8 Experiment**
@@ -93,7 +92,7 @@ profile:
 
 ---
 ## 🛠️ Staff
-<div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+<div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 
 ### Yuvaraj Elangovan
 **Electronics Design Engineer leading Pitt-CoRTEx**
@@ -109,7 +108,7 @@ profile:
 
 ---
 ## 🔬 Undergraduate Students
-<div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+<div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 
 ### Kyle Mo
 **Fabrication, characterization, simulation, and track reconstruction for Pitt-CoRTEx**
@@ -186,7 +185,7 @@ profile:
 <hr style="border: 3px solid #ccc; margin: 30px 0;"> 
 
 ## 📚 Past members
-<div style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+<div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 ---
 <!-- #### Gregory (Greg) Kenning
 - George Washington

@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /research_projects/
-# description: Understanding the fundamental properties of neutrinos and their role in physics beyond the Standard Model
+description: Understanding the fundamental properties of neutrinos and their role in physics in and beyond the Standard Model
 nav: true
 order: 4
 display_categories: [Neutrino Mass, Neutrinoless Double Beta Decay, Reactor Neutrinos]
@@ -22,7 +22,7 @@ horizontal: false
       {% for category in page.display_categories %}
         <div class="research-category">
           <h2 class="category">{{ category }}</h2>
-          <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 3px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+          <div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 3px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
           
           {% assign categorized_projects = site.projects | where: "category", category %}
           {% assign sorted_projects = categorized_projects | sort: "importance" %}

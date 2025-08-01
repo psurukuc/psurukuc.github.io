@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 description: 
 
-nav: true
+nav: false
 order: 7
 social: true  # includes social icons at the bottom of the page
 
