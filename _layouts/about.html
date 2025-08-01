@@ -2,48 +2,49 @@
 layout: default
 ---
 <div class="post">
-
   <header class="post-header">
     <h1 class="post-title">
      {% if site.title == "blank" %}<span class="font-weight-bold">{{ site.last_name}}</span> group{% else %}{{ site.title }}{% endif %}
     </h1>
   </header>
 
-<!-- Description about the group etc -->
-  <div class="clearfix" >
+  <!-- Description about the group etc -->
+  <div class="about-content clearfix">
     {{ content }}
   </div>
   
-<!-- Automated slideshow generated from _data/slideshow.yml -->
-<div class="slideshow-container">
-  {% for image in site.data.slideshow.images %}
-  <div class="mySlides fade">
-    <img src="{{ '/assets/img/' | append: image.src | relative_url }}" alt="{{ image.caption }}">
-    <div class="slide-caption">
-      <div class="caption-content">{{ image.caption }}</div>
+  <!-- Automated slideshow generated from _data/slideshow.yml -->
+  <div class="slideshow-section">
+    <div class="slideshow-container">
+      {% for image in site.data.slideshow.images %}
+      <div class="mySlides fade">
+        <img src="{{ '/assets/img/' | append: image.src | relative_url }}" alt="{{ image.caption }}">
+        <div class="slide-caption">
+          <div class="caption-content">{{ image.caption }}</div>
+        </div>
+      </div>
+      {% endfor %}
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="next" onclick="plusSlides(1)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- The dots/circles - automatically generated -->
+    <div class="slideshow-dots">
+      {% for image in site.data.slideshow.images %}
+      <span class="dot" onclick="currentSlide({{ forloop.index }})"></span>
+      {% endfor %}
     </div>
   </div>
-  {% endfor %}
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
-  <a class="next" onclick="plusSlides(1)">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
-</div>
-
-<!-- The dots/circles - automatically generated -->
-<div class="slideshow-dots">
-  {% for image in site.data.slideshow.images %}
-  <span class="dot" onclick="currentSlide({{ forloop.index }})"></span>
-  {% endfor %}
-</div>
 
 <script>
 let slideIndex = 1;
@@ -114,49 +115,44 @@ document.querySelector('.slideshow-container').addEventListener('mouseleave', fu
 </script>
 
 
-
-<!-- ...existing code... -->
-
-
-
-<!-- News -->
-{% if page.news%}
-  <h2>
-    <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-  </h2>
-  {% include news.liquid limit=true %}
-{% endif %}
-
-<div style="margin-bottom: 40px;"></div>
-  
-
-    <!-- {% if page.profile %}
-    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-      {% if page.profile.image %}
-        <img class="img-fluid z-depth-1 rounded " width="100%" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
-      {% endif %}
-    </div>
-    {% endif %} -->
-
-    {% if page.selected_papers %}
-    <h2>
-      <a href="{{ '/research_publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
+  <!-- News Section -->
+  {% if page.news %}
+  <section class="news-section">
+    <h2 class="section-header">
+      <a href="{{ '/news/' | relative_url }}" style="color: inherit; text-decoration: none;">
+        📰 Latest News
+      </a>
     </h2>
+    <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); height: 3px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+    {% include news.liquid limit=true %}
+  </section>
+  {% endif %}
+
+  <!-- Selected Publications Section -->
+  {% if page.selected_papers %}
+  <section class="publications-section">
+    <h2 class="section-header">
+      <a href="{{ '/research_publications/' | relative_url }}" style="color: inherit; text-decoration: none;">
+        📚 Selected Publications
+      </a>
+    </h2>
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 3px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
     <div class="select_publications">
       {% include selected_papers.html %}
-    {% endif %}
-  </div>
+    </div>
+  </section>
+  {% endif %}
 
-    {% if page.social %}
+  <!-- Social Section -->
+  {% if page.social %}
+  <section class="social-section">
     <div class="social">
       <div class="contact-icons">
         {% include social.html %}
       </div>
       <div class="contact-note">{{ site.contact_note }}</div>
     </div>
-    {% endif %}
-
-  <!-- <article>
-  </article> -->
+  </section>
+  {% endif %}
 
 </div>

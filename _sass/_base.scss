@@ -870,3 +870,76 @@ html.transition *:after {
     margin-top: 2rem;
   }
 }
+
+/******************************************************************************
+ * About Page
+ ******************************************************************************/
+
+.about-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  
+  p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+}
+
+.slideshow-section {
+  margin: 3rem 0;
+  
+  .slideshow-container {
+    margin-bottom: 1rem;
+  }
+}
+
+.news-section,
+.publications-section {
+  margin: 3rem 0;
+  
+  .section-header {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--global-theme-color);
+    
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      
+      &:hover {
+        color: var(--global-hover-color) !important;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.social-section {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--global-divider-color);
+  
+  .social {
+    .contact-icons {
+      margin-bottom: 1rem;
+      
+      a {
+        margin: 0 0.5rem;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: translateY(-2px);
+        }
+      }
+    }
+    
+    .contact-note {
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+      font-style: italic;
+    }
+  }
+}
