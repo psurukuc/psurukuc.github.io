@@ -40,7 +40,7 @@ blockquote {
   font-size: 0.875rem;
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
-  text-align: center;
+  text-align: right;
 }
 
 // Citation
@@ -71,6 +71,12 @@ blockquote {
       font-size: 1rem;
     }
   }
+}
+
+.profile-img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
 }
 
 @media (min-width: 576px) {
