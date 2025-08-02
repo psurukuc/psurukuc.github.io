@@ -699,21 +699,12 @@ html.transition *:after {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     
     /* Optimize image rendering */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     will-change: transform;
-    
-    /* Fade in when loaded */
-    &[data-loaded="true"] {
-      opacity: 1;
-    }
-    
-    &:not([data-loaded="true"]) {
-      opacity: 0.3;
-    }
   }
 
   &:hover img {
