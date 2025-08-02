@@ -185,7 +185,7 @@ profile:
   </div>
 </div>
 <!-- --- -->
-<hr style="border: 3px solid #ccc; margin: 30px 0;"> 
+
 
 ## 📚 Past members
 <div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
