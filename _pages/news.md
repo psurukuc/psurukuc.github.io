@@ -9,7 +9,7 @@ announcements:
   limit: 15
   scrollable: true
 nav: true
-order: 6
+order: 4
 ---
 
 <div class="news-intro">

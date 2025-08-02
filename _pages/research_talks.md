@@ -12,12 +12,12 @@ order: 5
 
 <div class="talks-intro">
   <div class="talks-summary">
-    <h3 style="margin-bottom: 1rem; color: var(--global-theme-color);">📊 Talk Summary</h3>
+    <h3 style="margin-bottom: 0.8rem; color: var(--global-theme-color);">📊 Talk Summary</h3>
     <div class="talk-counts">
       {% for t in page.types %}
-        <span class="talk-type-badge">
+        <a href="#{{ t | downcase }}-presentations" class="talk-type-badge">
           <strong>{{t}}:</strong> {% bibliography_count -f talks -q @*[abbr={{t}}]*  %}
-        </span>
+        </a>
       {% endfor %}
     </div>
   </div>
@@ -26,14 +26,14 @@ order: 5
 <div class="talks-content">
   <div class="publications">
     {% for t in page.types %}
-      <div class="talk-category">
+      <div class="talk-category" id="{{ t | downcase }}-presentations">
         <h2 class="category-header">
           {% if t == "Invited" %}🎯{% endif %}
           {% if t == "Conference" %}🏛️{% endif %}
           {% if t == "Poster" %}📋{% endif %}
           {{ t }} Presentations
         </h2>
-        <div class="category-line" style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 3px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;">
+        <div class="category-line" style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 2px; width: 100%; margin: 8px 0 20px 0; border-radius: 2px;">
         </div>
         
         <div class="talk-list">
