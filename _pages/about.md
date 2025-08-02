@@ -3,7 +3,7 @@ layout: about
 title: about
 order: 1
 permalink: /
-description: "Pranava Teja Surukuchi is an Assistant Professor of Physics at University of Pittsburgh, leading cutting-edge neutrino physics research. Explore our work on neutrinoless double-beta decay, neutrinos mass, and advanced detector technologies through CUORE, CUPID, and Project 8 experiments."
+description: "Explore our work on neutrinoless double-beta decay, neutrinos mass, and advanced detector technologies through CUORE, CUPID, and Project 8 experiments."
 seo_title: "Pranava Teja Surukuchi - Neutrino Physics Research | University of Pittsburgh"
 keywords: "Pranava Teja Surukuchi, neutrino physics, University of Pittsburgh physics, assistant professor, CUORE, CUPID, Project 8, neutrinoless double-beta decay, neutrino mass, particle physics research"
 
@@ -19,16 +19,13 @@ announcements:
 #   image: Headshot_Yale.jpg
 ---
 
-Hello, :wave: Welcome to Surukuchi group at the University of Pittsburgh. Our group's research is at the intersection of experimental particle and nuclear physics with a focus on determining the properties of neutrinos.
-<!-- [neutrinos](/sub/resources_neutrinos) -->
-<!-- Neutrinos are the least understood fundamental particles.  -->
-In particular, we focus on 
-<!-- At the moment, we focus on the  intereted in the most important unanswered questions in the Standard Model of Particles,  -->
-determing the magnitude and nature of neutrino mass. 
 
-We work with researchers from throughout the world on experimental scientific collaborations to answer these incredibly hard questions. We are aiming to build the world's most sensitive device to directly measure the mass of neutrinos on the [Project 8](https://www.project8.org/) experiment. 
-<!-- I am leading the antenna design and the event reconstruction efforts on the upcoming Phase of the experiment.  -->
-We are performing some of the world leading searches for neutrinoless double beta decay by using the [CUORE](https://cuore.lngs.infn.it/) and [CUPID](https://cupid.lngs.infn.it/) detectors. 
+Hello! 👋 Welcome to the **Surukuchi Group** at the University of Pittsburgh. Our research is at the intersection of experimental particle and nuclear physics, with a focus on determining the fundamental properties of **neutrinos** — the most mysterious particles in the Standard Model.
+## 🔬 Research Focus
+
+Our primary focus is on **determining the magnitude and nature of neutrino mass**. Despite being the most abundant massive particles in the universe, neutrinos remain poorly understood, making them a unique window into physics beyond the Standard Model.
+
+We collaborate with researchers worldwide on cutting-edge experimental scientific collaborations [CUORE](https://cuore.lngs.infn.it/), [CUPID](https://cupid.lngs.infn.it/), and [Project 8](https://www.project8.org/) to tackle these fundamental questions.
 
 <!-- I got my Ph.D. from Illinois Institute of Technology, Chicago working on [PROSPECT](https://prospect.yale.edu/) reactor neutrino experiment where I led the detector fabrication and subsequently its first search for sterile neutrinos.
 I then joined the [Wright Laboratory](https://wlab.yale.edu/) at Yale University as a Postdoctoral Research Associate. -->

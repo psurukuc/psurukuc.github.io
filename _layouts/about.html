@@ -60,12 +60,8 @@ layout: default
   <!-- News Section -->
   {% if page.news %}
   <section class="news-section">
-    <h2 class="section-header">
-      <a href="{{ '/news/' | relative_url }}" style="color: inherit; text-decoration: none;">
-        📰 Latest News
-      </a>
-    </h2>
-    <div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 3px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
+    <h2 class="section-header">📰 Latest News</h2>
+    <div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 2px; width: 100%; margin: 5px 0 20px 0; border-radius: 1px;"></div>
     {% include news.liquid limit=true %}
   </section>
   {% endif %}
@@ -73,15 +69,9 @@ layout: default
   <!-- Selected Publications Section -->
   {% if page.selected_papers %}
   <section class="publications-section">
-    <h2 class="section-header">
-      <a href="{{ '/research_publications/' | relative_url }}" style="color: inherit; text-decoration: none;">
-        📚 Selected Publications
-      </a>
-    </h2>
-    <div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 3px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
-    <div class="select_publications">
-      {% include selected_papers.html %}
-    </div>
+    <h2 class="section-header">📚 Selected Publications</h2>
+    <div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 2px; width: 100%; margin: 5px 0 10px 0; border-radius: 1px;"></div>
+    {% include selected_papers.html %}
   </section>
   {% endif %}
 
