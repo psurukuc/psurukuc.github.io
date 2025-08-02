@@ -34,7 +34,7 @@ order: 6
           {% if p == "Under Review" %}⏳{% endif %}
           {% if p == "Preprint" %}📝{% endif %}
           {% if p == "Proceedings" %}📚{% endif %}
-          {{ p }} Publications
+          {{ p }}
         </h2>
         <div class="category-line" style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 2px; width: 100%; margin: 8px 0 20px 0; border-radius: 2px;">
         </div>

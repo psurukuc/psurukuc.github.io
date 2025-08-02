@@ -1,40 +1,36 @@
-<div class="card-item col">
-  {% if project.redirect %}
-  <a href="{{ project.redirect }}">
-  {% else %}
-  <a href="{{ project.url | relative_url }}">
-  {% endif %}
-    <div class="card hoverable">
-      <div class="row g-0">
-        {% if project.img %}
-        <div class="card-img col-md-6">
-          <img src="{{ project.img | relative_url }}" alt="project thumbnail">
-        </div>
-        <div class="col-md-6">
-        {% else %}
-        <div class="col-md-12">
-        {% endif %}
-          <div class="card-body">
-            <!-- <h3 class="card-title text">{{ project.title }}</h3> -->
-            <p class="card-text">{{ project.description }}</p>
-            <div class="row ml-1 mr-1 p-0">
-              {% if project.github %}
-              <div class="github-icon">
-                <div class="icon" data-toggle="tooltip" title="Code Repository">
-                  <a href="{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
-                </div>
-                {% if project.github_stars %}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fas fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-                {% endif %}
-              </div>
-              {% endif %}
-            </div>
+<<div class="card-item col">
+{% if project.redirect %}
+<a href="{{ project.redirect }}" class="project-link">
+{% else %}
+<a href="{{ project.url | relative_url }}" class="project-link">
+{% endif %}
+  <div class="project-card hoverable horizontal">
+    <div class="project-card-horizontal-content">
+      {% if project.img %}
+      <div class="project-image-container horizontal">
+        <img src="{{ project.img | relative_url }}" alt="{{ project.title}}" class="project-image">
+      </div>
+      {% endif %}
+      <div class="project-text">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.description }}</p>
+        
+        {% if project.github %}
+        <div class="project-links">
+          <div class="github-link" data-toggle="tooltip" title="Code Repository">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
           </div>
+          {% if project.github_stars %}
+          <div class="github-stars" data-toggle="tooltip" title="GitHub Stars">
+            <i class="fas fa-star"></i>
+            <span id="{{ project.github_stars }}-stars">{{ project.github_stars }}</span>
+          </div>
+          {% endif %}
         </div>
+        {% endif %}
       </div>
     </div>
-  </a>
+  </div>
+</a>
 </div>

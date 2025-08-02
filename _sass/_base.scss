@@ -159,6 +159,7 @@ blockquote {
       i::before {
         color: var(--global-text-color-light);
         -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
       &:hover {
         i::before {
@@ -238,6 +239,7 @@ blockquote {
       i::before {
         color: var(--global-text-color-light);
         -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
       &:hover {
         i::before {
@@ -364,8 +366,9 @@ footer.sticky-bottom {
         color: $grey-color-dark;
         opacity: 1.0;
       }
-      .card-text 
-      {
+      .card-text {
+        font-size: 0.9rem;
+        line-height: 1.4;
       }
     }
   }
@@ -378,19 +381,30 @@ footer.sticky-bottom {
       margin-top: 0.5cm;
       object-fit: contain;
       align-items: center;
+      background: var(--global-bg-color);
+      border: 1px solid var(--global-divider-color);
+      border-radius: 6px;
+      padding: 0.3rem;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        border-color: var(--global-theme-color);
+        opacity: 1.0;
+      }
     }
     .card-title {
       color: $grey-color-dark;
       margin-left: 0.5rem;
       opacity: 0.5;
     }
-    .card-text 
-    {
+    .card-text {
       margin-left: 1rem;
       margin-top: 1rem;
       margin-right: 1rem;
       opacity: 1.0;
       color: $grey-color-dark;
+      font-size: 0.95rem;
+      line-height: 1.5;
     }
     color: $grey-color-dark;
     height: 5cm;
@@ -866,40 +880,46 @@ html.transition *:after {
 }
 
 .research-content {
-  .research-category {
-    margin-bottom: 4rem;
-    
-    &:last-child {
-      margin-bottom: 2rem;
-    }
-    
-    h2.category {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--global-theme-color);
-      border: none;
-      text-align: left;
-      padding-top: 0;
-      margin-top: 0;
-    }
+  @media (max-width: 768px) {
+    padding: 0 0.5rem;
   }
+}
+
+.research-category {
+  margin-bottom: 4rem;
   
-  .project-item {
+  &:last-child {
     margin-bottom: 2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    &:hover {
-      transform: translateY(-2px);
-    }
   }
   
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+  h2.category {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--global-theme-color);
+    border: none;
+    text-align: left;
+    padding-top: 0;
+    margin-top: 0;
+    
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
   }
+}
+
+.project-item {
+  margin-bottom: 2rem;
+  // translateY effect removed for cleaner experience
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 /******************************************************************************
@@ -1399,5 +1419,437 @@ html {
     color: var(--global-theme-color);
     padding: 0;
     border-radius: 0;
+  }
+}
+
+// Modern Project Cards
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+    // Removed card zoom effect for smoother experience
+    transform: none;
+  }
+}
+
+.project-card {
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              box-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    border-color: var(--global-theme-color);
+  }
+
+  &.hoverable:hover {
+    // No transform effects for smooth experience
+    transform: none;
+  }
+}
+
+.project-card-content {
+  padding: 1.5rem;
+  
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+  
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.project-description {
+  color: var(--global-text-color);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  
+  @media (max-width: 768px) {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+.project-image-container {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: border-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              filter 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+  // Enhanced visibility for dark themes
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  padding: 0.5rem;
+  
+  &:hover {
+    // Only subtle border color change, no zoom
+    border-color: var(--global-theme-color);
+  }
+  
+  @media (max-width: 768px) {
+    max-height: 150px;
+    padding: 0.3rem;
+  }
+}
+
+.project-images-dual {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .project-image-container {
+    flex: 1;
+    margin-bottom: 0;
+    
+    .project-image {
+      background: var(--global-bg-color);
+      border: 1px solid var(--global-divider-color);
+      padding: 0.5rem;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      
+      &:hover {
+        border-color: var(--global-theme-color);
+      }
+      
+      @media (max-width: 768px) {
+        padding: 0.3rem;
+      }
+    }
+  }
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-divider-color);
+  
+  @media (max-width: 768px) {
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+  }
+}
+
+.github-link, .github-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: var(--global-theme-color);
+  }
+  
+  i {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 0.85rem;
+    gap: 0.4rem;
+    
+    i {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.project-text {
+  flex: 1;
+}
+
+// Container improvements for project layout
+.project-item {
+  margin-bottom: 2rem;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+// Legacy card style updates
+.card {
+  // ...existing code...
+  
+  @media (max-width: 768px) {
+    height: auto;
+    min-height: auto;
+    
+    img {
+      height: 3cm;
+      margin-top: 0.3cm;
+    }
+    
+    .card-text {
+      margin: 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.card-item {
+  // ...existing code...
+  
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+}
+
+// Horizontal project card layout
+.project-card.horizontal {
+  .project-card-horizontal-content {
+    display: flex;
+    align-items: stretch;
+    gap: 1.5rem;
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
+  .project-image-container.horizontal {
+    flex: 0 0 200px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @media (max-width: 768px) {
+      flex: none;
+      text-align: center;
+    }
+    
+    .project-image {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      object-fit: contain;
+      
+      @media (max-width: 768px) {
+        max-height: 120px;
+      }
+    }
+  }
+  
+  .project-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .project-description {
+    margin-bottom: auto;
+  }
+  
+  .project-links {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--global-divider-color);
+    
+    @media (max-width: 768px) {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+    }
+  }
+}
+
+// Enhanced logo visibility using theme variables
+// Note: Strong dark mode overrides are applied at the end of the file
+.project-image, .project-images-dual .project-image {
+  // Base styling with subtle enhancement for better logo visibility
+  filter: contrast(1.05) brightness(1.02) saturate(1.02);
+  
+  &:hover {
+    // Very subtle filter change for smooth transition
+    filter: contrast(1.08) brightness(1.04) saturate(1.04);
+  }
+}
+
+// Final dark mode override for optimal logo visibility
+// This ensures logos are visible regardless of dark mode implementation
+html[data-theme="dark"], 
+body.dark,
+.dark-theme {
+  .project-image {
+    // Strong white background for maximum logo visibility
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    filter: contrast(1.3) brightness(1.0) saturate(1.2) !important;
+    padding: 0.8rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    transition: border-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 1.0) !important;
+      border-color: var(--global-theme-color) !important;
+      filter: contrast(1.35) brightness(1.05) saturate(1.25) !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+    }
+  }
+  
+  .project-images-dual .project-image {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    filter: contrast(1.3) brightness(1.0) saturate(1.2) !important;
+    padding: 0.8rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    transition: border-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 1.0) !important;
+      border-color: var(--global-theme-color) !important;
+      filter: contrast(1.35) brightness(1.05) saturate(1.25) !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+    }
+  }
+  
+  .card img {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    filter: contrast(1.3) brightness(1.0) !important;
+    padding: 0.5rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    transition: border-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 1.0) !important;
+      border-color: var(--global-theme-color) !important;
+      filter: contrast(1.35) brightness(1.05) !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+    }
+  }
+}
+
+// Additional dark mode fallbacks for maximum compatibility
+@media (prefers-color-scheme: dark) {
+  .project-image, .project-images-dual .project-image {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    filter: contrast(1.3) brightness(1.0) saturate(1.2) !important;
+    padding: 0.8rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    transition: border-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 1.0) !important;
+      border-color: #007bff !important;
+      filter: contrast(1.35) brightness(1.05) saturate(1.25) !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+    }
+  }
+  
+  .card img {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    filter: contrast(1.3) brightness(1.0) !important;
+    padding: 0.5rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    transition: border-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 1.0) !important;
+      border-color: #007bff !important;
+      filter: contrast(1.35) brightness(1.05) !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+    }
+  }
+}
+
+// Universal dark mode class fallbacks
+.dark-mode, 
+.theme-dark, 
+body[data-theme="dark"], 
+.dark {
+  .project-image, .project-images-dual .project-image {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    filter: contrast(1.3) brightness(1.0) saturate(1.2) !important;
+    padding: 0.8rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    transition: border-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 1.0) !important;
+      border-color: #007bff !important;
+      filter: contrast(1.35) brightness(1.05) saturate(1.25) !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+    }
+  }
+  
+  .card img {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    filter: contrast(1.3) brightness(1.0) !important;
+    padding: 0.5rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    transition: border-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                background 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 1.0) !important;
+      border-color: #007bff !important;
+      filter: contrast(1.35) brightness(1.05) !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+    }
   }
 }

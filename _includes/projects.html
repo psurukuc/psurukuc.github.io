@@ -1,78 +1,51 @@
-<!-- <div class="grid-item">
-  {% if project.redirect %}
-  <a href="{{ project.redirect }}">
-  {% else %}
-  <a href="{{ project.url | relative_url }}">
-  {% endif %}
-    <div class="card hoverable">
-      {% if project.img %}
-      <img src="{{ project.img | relative_url }}" alt="project thumbnail">
-      {% endif %}
-      <div class="card-body">
-        <p class="card-text">{{ project.snapshot}}</p>
-        <div class="row ml-1 mr-1 p-0">
-          {% if project.github %}
-          <div class="github-icon">
-            <div class="icon" data-toggle="tooltip" title="Code Repository">
-              <a href="{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
-            </div>
-            {% if project.github_stars %}
-            <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-              <i class="fas fa-star"></i>
-              <span id="{{ project.github_stars }}-stars"></span>
-            </span>
-            {% endif %}
+{% if project.redirect %}
+<a href="{{ project.redirect }}" class="project-link">
+{% else %}
+<a href="{{ project.url | relative_url }}" class="project-link">
+{% endif %}
+  <div class="project-card hoverable">
+    <div class="project-card-content">
+      {% if project.title == "CUORE and CUPID" %}
+        <!-- Special layout for CUORE and CUPID with two images -->
+        <div class="project-images-dual">
+          <div class="project-image-container">
+            <img src="{{ project.img | relative_url }}" alt="{{ project.title}}" class="project-image">
           </div>
-          {% endif %}
+          <div class="project-image-container">
+            <img src="{{ project.img2 | relative_url }}" alt="{{ project.title}}" class="project-image">
+          </div>
         </div>
-      </div>
-    </div> 
-  </a>
-</div> -->
-
-<div class="card hoverable mb-3" style="max-width: 100%;">
-
-
-<!-- Uncomment these lines  -->
-  <!-- {% if project.redirect %}
-  <a href="{{ project.redirect }}">
-  {% else %}
-  <a href="{{ project.url | relative_url }}">
-  {% endif %} -->
-
-
-
-<!-- Remove between these lines  -->
-    <div class="row no-gutters">
-      {% if project.title=="CUORE and CUPID" %}
-      <div class="col-md-3">
-      <img src="{{ project.img | relative_url }}" alt="{{ project.title}}">
-      </div>
-      <div class="col">
-        <p class="card-text">{{ project.description}}</p>
-      </div>
-      <div class="col-md-3">
-        <img src="{{ project.img2 | relative_url }}" alt="{{ project.title}}">
-      </div>
+        <div class="project-text">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+        </div>
       {% else %}
-<!-- Remove between these lines  -->
-
-
-
-
-        <div class="col-md-3">
+        <!-- Standard layout for other projects -->
         {% if project.img %}
-        <img src="{{ project.img | relative_url }}" alt="{{ project.title}}">
+        <div class="project-image-container">
+          <img src="{{ project.img | relative_url }}" alt="{{ project.title}}" class="project-image">
+        </div>
+        {% endif %}
+        <div class="project-text">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+        </div>
+      {% endif %}
+      
+      {% if project.github %}
+      <div class="project-links">
+        <div class="github-link" data-toggle="tooltip" title="Code Repository">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </div>
+        {% if project.github_stars %}
+        <div class="github-stars" data-toggle="tooltip" title="GitHub Stars">
+          <i class="fas fa-star"></i>
+          <span id="{{ project.github_stars }}-stars">{{ project.github_stars }}</span>
+        </div>
         {% endif %}
       </div>
-      <div class="col">
-          <p class="card-text">{{ project.description}}</p>
-      </div>
-
-
-<!-- Remove this line  -->
-    {% endif %}
-
-   </div>
-  <!-- </a> -->
-</div>
+      {% endif %}
+    </div>
+  </div>
+</a>

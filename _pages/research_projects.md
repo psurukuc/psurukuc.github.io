@@ -6,7 +6,7 @@ permalink: /research_projects/
 seo_title: "Research Projects - Neutrino Physics Experiments | Surukuchi Lab"
 keywords: "neutrinoless double-beta decay, CUORE, CUPID, Project 8, cryogenic detectors, neutrino mass, University of Pittsburgh physics"
 nav: true
-order: 4
+order: 3
 display_categories: [Neutrino Mass, Neutrinoless Double Beta Decay, Reactor Neutrinos]
 horizontal: false
 ---
@@ -16,6 +16,25 @@ horizontal: false
     My group's research focuses on understanding the fundamental properties of neutrinos, with particular emphasis on their mass and the mechanisms by which they acquire it. Neutrinos are the only fundamental particles with unknown mass, making them a unique window into physics beyond the Standard Model. Their tiny, yet nonzero mass has profound implications for our understanding of the universe, influencing the evolution of large-scale cosmic structures and offering clues about the early universe, the nature of mass generation, and potential extensions to current particle physics theories.
   </p>
 </div>
+
+<style>
+@media (max-width: 768px) {
+  .research-intro p {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .research-category h2.category {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+  }
+  
+  .container .row .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+</style>
 
 <div class="research-content">
   <div class="projects">
