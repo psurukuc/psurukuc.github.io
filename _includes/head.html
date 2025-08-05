@@ -38,7 +38,7 @@
 <meta name="twitter:creator" content="@{{ site.twitter_username }}">
 <meta name="twitter:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title != 'blank' and page.url != '/' %}{{ page.title }} | {{ site.first_name }} {{ site.last_name }}{% else %}{{ site.first_name }} {{ site.last_name }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image | prepend: site.baseurl | prepend: site.url }}{% elsif site.og_image %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/img/prof_pic.jpg' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+<meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image | prepend: site.baseurl | prepend: site.url }}{% elsif site.og_image %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/img/web_prof_pic.jpg' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="{{ site.first_name }} {{ site.last_name }} - {{ site.description }}" />
@@ -46,7 +46,7 @@
 <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title != 'blank' and page.url != '/' %}{{ page.title }} | {{ site.first_name }} {{ site.last_name }}{% else %}{{ site.first_name }} {{ site.last_name }}{% endif %}" />
 <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-<meta property="og:image" content="{% if page.og_image %}{{ page.og_image | prepend: site.baseurl | prepend: site.url }}{% elsif site.og_image %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/img/prof_pic.jpg' | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
+<meta property="og:image" content="{% if page.og_image %}{{ page.og_image | prepend: site.baseurl | prepend: site.url }}{% elsif site.og_image %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/img/web_prof_pic.jpg' | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 {% if page.layout == 'post' %}
@@ -122,7 +122,7 @@
   "@type": "{% if page.layout == 'post' %}BlogPosting{% elsif page.url == '/group/' %}Organization{% else %}Person{% endif %}",
   {% if page.layout == 'post' %}
   "headline": "{{ page.title }}",
-  "description": "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}",
+  "description": "{% if page.description %}{{ page.description | strip | escape }}{% else %}{{ site.description | strip | escape }}{% endif %}",
   "author": {
     "@type": "Person",
     "name": "{{ site.first_name }} {{ site.last_name }}",
@@ -137,14 +137,28 @@
   "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}"
   {% elsif page.url == '/group/' %}
   "name": "Surukuchi Lab",
-  "description": "{{ page.description | default: site.description }}",
+  "description": "{{ page.description | default: site.description | strip | escape }}",
   "url": "{{ site.url }}{{ page.url }}",
-  "logo": "{{ '/assets/img/prof_pic.jpg' | prepend: site.baseurl | prepend: site.url }}",
+  "logo": "{{ '/assets/img/web_prof_pic.jpg' | prepend: site.baseurl | prepend: site.url }}",
+  {% assign hasSameAs = false %}
+  {% if site.orcid_id or site.github_username or site.twitter_username %}{% assign hasSameAs = true %}{% endif %}
+  {% if hasSameAs %}
   "sameAs": [
-    {% if site.orcid_id %}"https://orcid.org/{{ site.orcid_id }}",{% endif %}
-    {% if site.github_username %}"https://github.com/{{ site.github_username }}",{% endif %}
-    {% if site.twitter_username %}"https://twitter.com/{{ site.twitter_username }}"{% endif %}
+    {% assign firstItem = true %}
+    {% if site.orcid_id %}
+    {% if firstItem %}{% assign firstItem = false %}{% else %},{% endif %}
+    "https://orcid.org/{{ site.orcid_id }}"
+    {% endif %}
+    {% if site.github_username %}
+    {% if firstItem %}{% assign firstItem = false %}{% else %},{% endif %}
+    "https://github.com/{{ site.github_username }}"
+    {% endif %}
+    {% if site.twitter_username %}
+    {% if firstItem %}{% assign firstItem = false %}{% else %},{% endif %}
+    "https://twitter.com/{{ site.twitter_username }}"
+    {% endif %}
   ],
+  {% endif %}
   "parentOrganization": {
     "@type": "Organization",
     "name": "University of Pittsburgh",
@@ -161,9 +175,9 @@
   {% else %}
   "name": "{{ site.first_name }} {{ site.last_name }}",
   "jobTitle": "Assistant Professor of Physics",
-  "description": "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}",
+  "description": "{% if page.description %}{{ page.description | strip | escape }}{% else %}{{ site.description | strip | escape }}{% endif %}",
   "url": "{{ site.url }}",
-  "image": "{{ '/assets/img/prof_pic.jpg' | prepend: site.baseurl | prepend: site.url }}",
+  "image": "{{ '/assets/img/web_prof_pic.jpg' | prepend: site.baseurl | prepend: site.url }}",
   "email": "{{ site.email }}",
   "affiliation": {
     "@type": "Organization",
@@ -174,12 +188,24 @@
     "@type": "Organization",
     "name": "University of Pittsburgh",
     "url": "https://www.pitt.edu"
-  },
+  }{% assign hasSameAs = false %}
+  {% if site.orcid_id or site.github_username or site.twitter_username %}{% assign hasSameAs = true %}{% endif %}
+  {% if hasSameAs %},
   "sameAs": [
-    {% if site.orcid_id %}"https://orcid.org/{{ site.orcid_id }}",{% endif %}
-    {% if site.github_username %}"https://github.com/{{ site.github_username }}",{% endif %}
-    {% if site.twitter_username %}"https://twitter.com/{{ site.twitter_username }}"{% endif %}
-  ]
+    {% assign firstItem = true %}
+    {% if site.orcid_id %}
+    {% if firstItem %}{% assign firstItem = false %}{% else %},{% endif %}
+    "https://orcid.org/{{ site.orcid_id }}"
+    {% endif %}
+    {% if site.github_username %}
+    {% if firstItem %}{% assign firstItem = false %}{% else %},{% endif %}
+    "https://github.com/{{ site.github_username }}"
+    {% endif %}
+    {% if site.twitter_username %}
+    {% if firstItem %}{% assign firstItem = false %}{% else %},{% endif %}
+    "https://twitter.com/{{ site.twitter_username }}"
+    {% endif %}
+  ]{% endif %}
   {% endif %}
 }
 </script>

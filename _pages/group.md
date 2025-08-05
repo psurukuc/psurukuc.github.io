@@ -23,7 +23,7 @@ description: <span class="font-weight-bold"> Assistant Professor of Physics </sp
 
 profile:
   align: right
-  image: Headshot_Yale.jpg
+  image: web_Headshot_Yale.jpg
   address: 
     Department of Physics and Astronomy<br>
     417 Allen Hall<br>
@@ -38,7 +38,7 @@ profile:
 
 <div class="row">
   <div class="col-sm-4">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/Headshot_Yale.jpg" alt="Pranava Teja Surukuchi">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/web_Headshot_Yale.jpg" alt="Pranava Teja Surukuchi">
   </div>
   <div class="col-sm-8">
     <p style="text-align: justify;">My research interests span experimental neutrino physics, rare event searches, and detector development. I am particularly interested in understanding the fundamental properties of neutrinos and their role in physics beyond the Standard Model. Currently, I lead research efforts on Project 8, <a href="https://cuore.lngs.infn.it/">CUORE</a>, <a href="https://cupid.lngs.infn.it/">CUPID</a>, and <a href="https://www.project8.org/"> Project 8</a>.</p>
@@ -89,7 +89,7 @@ profile:
     </p>
   </div>
   <div class="col-sm-4">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/Tristan_profile.jpeg" alt="">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/web_Tristan_profile.jpeg" alt="">
   </div>
 </div>
 
@@ -122,7 +122,7 @@ profile:
     </p>
   </div>
   <div class="col-sm-4">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/Mo_profile.jpg" alt="">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/web_Mo_profile.jpg" alt="">
   </div>
 </div>
 
@@ -181,7 +181,7 @@ profile:
   </p>
   </div>
   <div class="col-sm-4">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/Maloney_profile.jpg" alt="">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/web_Maloney_profile.jpg" alt="">
   </div>
 </div>
 <!-- --- -->
