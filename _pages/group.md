@@ -128,36 +128,9 @@ profile:
 
 <div style="margin-bottom: 40px;"></div>
 
-### Vincent Niedermeyer
-**Developing generative ML algorithms for synthetic CRES event generation**
 
-<div class="row">
-  <div class="col-sm-4">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/profile_placeholder.png" alt="">
-  </div>
-  <div class="col-sm-8">
-    <p style="text-align: justify;">Coming soon....</p>
-  </div>
-</div>
-
-<div style="margin-bottom: 40px;"></div>
-
-### Tyler Schutt
-**Developing ML algorithms for synthetic CRES event generation and track finding**
-
-<div class="row">
-  <div class="col-sm-8">
-    <p style="text-align: justify;">Coming soon....</p>
-  </div>
-  <div class="col-sm-4">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/profile_placeholder.png" alt="">
-  </div>
-</div>
-
-<div style="margin-bottom: 40px;"></div>
-
-### Megan (Meg) Gibbons
-**Investigating seismic detection capabilities of the CUORE detector**
+### Meg Gibbons
+**Seismic event detection and characterization with CUORE**
 
 <div class="row">
   <div class="col-sm-4">
@@ -170,18 +143,35 @@ profile:
 
 <div style="margin-bottom: 40px;"></div>
 
+
+### Tyler Schutt
+**Developing ML algorithms for synthetic CRES event generation and track finding**
+
+<div class="row">
+
+  <div class="col-sm-8">
+    <p style="text-align: justify;">Coming soon....</p>
+  </div>
+  <div class="col-sm-4">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/profile_placeholder.png" alt="">
+  </div>
+</div>
+
+<div style="margin-bottom: 40px;"></div>
+
 ### Sean Maloney
 **Working on monitoring software and detector support structures for Pitt-CoRTEx**
 
 <div class="row">
+
+  <div class="col-sm-4">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/web_Maloney_profile.jpg" alt="">
+  </div>
   <div class="col-sm-8">
     <p style="text-align: justify;">
     I am currently a senior at Pitt and hope to one day enter graduate school in astrophysics. My research interests involve cosmology and high energy particles, particularly cosmic rays. I have attempted to gain a breadth of research experience, involving extra-galactic astrometric studies with Dr. TQ Zhang, and muon detector design and construction with Dr. Surukuchi.
     <!-- I have experience in phyton, html, java script, and C++. Much of my expertise lies in data analysis and simulations, but have recently gain experience in 3D modeling with AutoCAD.   -->
   </p>
-  </div>
-  <div class="col-sm-4">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/web_Maloney_profile.jpg" alt="">
   </div>
 </div>
 <!-- --- -->
@@ -194,6 +184,13 @@ profile:
 - George Washington
 * John Adams
 + Thomas Jefferson -->
+
+
+### Vincent Niedermeyer
+*Undergraduate Researcher (Spring 2025 - Summer 2025)* | 
+<p style="text-align: justify;">
+Developing generative ML algorithms for synthetic CRES event generation
+</p>
 
 ### Brent Clelland
 *Undergraduate Researcher (Summer 2024 - Summer 2025)* | **Starting grad school at NC State**
