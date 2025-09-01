@@ -197,7 +197,7 @@ Developing generative ML algorithms for synthetic CRES event generation
 <p style="text-align: justify;">
 Fabrication, characterization, simulation, and track reconstruction for Pitt-CoRTEx.
 </p>
-
+ 
 <div style="margin-bottom: 40px;"></div>
 
 ### Gregory (Greg) Kenning
