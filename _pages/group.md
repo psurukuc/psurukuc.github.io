@@ -72,10 +72,10 @@ profile:
 
 <div class="row">
   <div class="col-sm-4">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/profile_placeholder.png" alt="">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/Adil.jpg" alt="">
   </div>
   <div class="col-sm-8">
-    <p style="text-align: justify;">Coming soon....</p>
+    <p style="text-align: justify;">I graduated from the University of Dhaka in 2023 with a B.S. in Physics. During my senior year of school, I developed interest in Beyond-Standard-Model (BSM) physics as I worked on a variational approach to Black Hole Thermodynamics, and wanted to get involved in experimental searches for BSM physics in the future. Thus, during the fall of 2023, I joined the Surukuchi group and started working on the Project 8 experiment. I am working primarily on developing/testing trigger and algorithms for signal detection & reconstruction for the experiment, with a goal to measuring energy of beta-decay electrons more precisely. Besides research, I enjoy sports, cooking and traveling.</p>
   </div>
 </div>
 

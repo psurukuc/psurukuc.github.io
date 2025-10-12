@@ -2,9 +2,9 @@
 layout: page
 permalink: /research_publications/
 title: Publications
-description: "Comprehensive list of scientific publications from Surukuchi Lab covering neutrino physics research, neutrinoless double-beta decay studies, reactor neutrino detection, and detector development. Our work contributes to major collaborations including CUORE, CUPID, and Project 8 experiments."
+description: "Comprehensive list of scientific publications from Surukuchi Lab."
 seo_title: "Publications - Neutrino Physics Research Papers | Surukuchi Lab"
-keywords: "neutrino physics publications, CUORE papers, CUPID research, PROSPECT publications, double-beta decay papers, particle physics research, University of Pittsburgh physics publications, peer-reviewed articles"
+keywords: "neutrino physics, CUORE, CUPID, double-beta decay, neutrino mass, reactor neutruinos"
 current_year: 2025
 paper_types: [Thesis, Refereed, Under Review, Preprint, Proceedings]
 nav: true

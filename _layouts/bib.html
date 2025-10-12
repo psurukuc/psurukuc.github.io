@@ -44,11 +44,12 @@
           {% endif %}
         {% endif %}
       {% elsif entry.type == "conference" %}
+      {% if entry.presenter %}Presenter: {{entry.presenter}}<br>{% endif %}
         <em style="color: var(--global-theme-color);">{{entry.name}},</em> 
         {% if entry.year %}
         <p style="display:inline; font-weight:bold; color:var(--global-theme-color);">{{entry.year}}</p><br>
         {% endif %}
-        {{entry.location}}<br>
+        {% if entry.location %}{{entry.location}}{% endif %}
       {% endif %}
       </div>
 

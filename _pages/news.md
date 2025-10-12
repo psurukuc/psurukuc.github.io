@@ -6,7 +6,7 @@ description: "Stay updated with the latest news, achievements, and announcements
 seo_title: "Latest News & Updates | Surukuchi Lab Neutrino Physics Research"
 keywords: "Surukuchi Lab news, neutrino physics updates, research announcements, student achievements, conference news, physics awards, University of Pittsburgh physics news, CUORE CUPID PROSPECT updates"
 announcements:
-  limit: 15
+  limit: 30
   scrollable: true
 nav: true
 order: 4

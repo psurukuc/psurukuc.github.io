@@ -2,15 +2,15 @@
 layout: page
 permalink: /research_talks/
 title: Talks 
-description: "Browse scientific talks and presentations by Surukuchi Lab members. Our presentations cover neutrinoless double-beta decay, reactor neutrino physics, cryogenic detector development, and results from CUORE, CUPID, and PROSPECT experiments at international conferences and workshops."
-seo_title: "Scientific Talks & Presentations | Surukuchi Lab Neutrino Physics"
-keywords: "physics talks, neutrino conferences, CUORE presentations, CUPID talks, PROSPECT seminars, double-beta decay, particle physics presentations, University of Pittsburgh physics talks"
+description: "Browse scientific talks and presentations by Surukuchi Lab members."
+seo_title: "Scientific Talks & Presentations | Surukuchi Lab Neutrino Physics"  
+keywords: "physics talks, neutrino conferences, CUORE, CUPID, PROSPECT, double-beta decay"
 types: ["Invited","Conference","Poster"]
 nav: true
 order: 5
 ---
 
-<div class="talks-intro">
+<!-- <div class="talks-intro">
   <div class="talks-summary">
     <h3 style="margin-bottom: 0.8rem; color: var(--global-theme-color);">📊 Talk Summary</h3>
     <div class="talk-counts">
@@ -21,7 +21,7 @@ order: 5
       {% endfor %}
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="talks-content">
   <div class="publications">
