@@ -9,11 +9,20 @@
       {% endif %}
     >
       <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
+        {% if include.timeless_first %}
+          {% assign timeless_news = site.news | where: "timeless", true %}
+          {% assign regular_news = site.news | where_exp: "n", "n.timeless != true" %}
+          {% assign timeless_news = timeless_news | sort: "date" | reverse %}
+          {% assign regular_news = regular_news | sort: "date" | reverse %}
+          {% assign news = timeless_news | concat: regular_news %}
+        {% else %}
+          {% assign news = site.news | sort: "date" | reverse %}
+        {% endif %}
+
         {% if include.limit and page.announcements.limit %}
           {% assign news_limit = page.announcements.limit %}
         {% else %}
-          {% assign news_limit = news_size %}
+          {% assign news_limit = news | size %}
         {% endif %}
         {% for item in news limit: news_limit %}
           <tr>
