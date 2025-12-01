@@ -93,6 +93,20 @@ profile:
   </div>
 </div>
 
+### Chi-Ho Lam
+**Ph.D. Student working on the Project 8 Experiment**
+
+<div class="row">
+  <div class="col-sm-4">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/profile_placeholder.png" alt="">
+  </div>
+  <div class="col-sm-8">
+    <p style="text-align: justify;">Coming soon....</p>
+  </div>
+</div>
+
+<div style="margin-bottom: 40px;"></div>
+
 ---
 ## 🛠️ Staff
 <div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
