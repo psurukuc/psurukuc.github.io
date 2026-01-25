@@ -1,12 +1,9 @@
----
-permalink: /robots.txt
----
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /.git/
 Disallow: /_site/
 
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: https://psurukuc.github.io/sitemap.xml
 
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Sitemap: https://psurukuc.github.io/sitemap.xml
