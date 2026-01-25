@@ -98,10 +98,10 @@ profile:
 
 <div class="row">
   <div class="col-sm-4">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/profile_placeholder.png" alt="">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/Chi_Lam.jpg" alt="">
   </div>
   <div class="col-sm-8">
-    <p style="text-align: justify;">Coming soon....</p>
+    <p style="text-align: justify;">I graduated from the Chinese University of Hong Kong in 2022. During my undergraduate years, I have been drawn to physical simulation and BSM searches via research experiences with semiconductors and the ATLAS experiment. I joined the group in 2025 and started working on the Project 8 experiment. My current research focuses on sensitivity studies with the aid of Monte Carlo simulations for the detection of relic and sterile neutrinos, exploring how far Project 8 can probe these rare events. In my free time, I like gaming, playing guitar, and watching anime.</p>
   </div>
 </div>
 
