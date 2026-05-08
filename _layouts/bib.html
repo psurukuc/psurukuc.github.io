@@ -1,6 +1,8 @@
 ---
 ---
 
+{% assign entry_display_date = entry.date | default: entry.year %}
+
 <div class="row">
   <!-- Generates a badge only if the type is not conference or papers -->
   {% if entry.type != "conference" %}
@@ -25,7 +27,7 @@
       <!-- {{reference}} -->
       <em style="color: var(--global-theme-color);">{{entry.abbr}} {{entry.publication_type}}</em><br>
       <p style="display:inline;">{{entry.school}}</p>
-      <p style="display:inline; font-weight:bold;">{{entry.year}}</p>
+      <p style="display:inline; font-weight:bold;">{{entry_display_date}}</p>
       {% elsif entry.type != "conference" %}
         <!--{{entry.type}}-->
       {% endif %}
@@ -38,16 +40,16 @@
         {% elsif entry.publication_type == "Proceedings" %}
           <em>In {{entry.booktitle}}, </em>
         {% endif %}
-        {% if entry.year %}
+        {% if entry_display_date %}
           {% if entry.abbr %}
-          <p style="font-weight:bold; display:inline;">{{entry.year}}</p>
+          <p style="font-weight:bold; display:inline;">{{entry_display_date}}</p>
           {% endif %}
         {% endif %}
       {% elsif entry.type == "conference" %}
       {% if entry.presenter %}Presenter: {{entry.presenter}}<br>{% endif %}
         <em style="color: var(--global-theme-color);">{{entry.name}},</em> 
-        {% if entry.year %}
-        <p style="display:inline; font-weight:bold; color:var(--global-theme-color);">{{entry.year}}</p><br>
+        {% if entry_display_date %}
+        <p style="display:inline; font-weight:bold; color:var(--global-theme-color);">{{entry_display_date}}</p><br>
         {% endif %}
         {% if entry.location %}{{entry.location}}{% endif %}
       {% endif %}
