@@ -8,7 +8,7 @@ keywords: "neutrino physics, CUORE, CUPID, double-beta decay, neutrino mass, rea
 current_year: 2025
 paper_types: [Thesis, Refereed, Under Review, Preprint, Proceedings]
 nav: true
-order: 6
+order: 7
 ---
 
 <div class="publications-intro">

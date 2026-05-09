@@ -53,7 +53,7 @@ profile:
 <div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 
 ### Vivek Sharma
-**Postdoctoral Researcher working on the CUORE, CUPID, and Project 8 Experiment**
+**Postdoctoral Researcher working on the CUORE, CUPID, and Project 8 Experiments**
 <div class="row">
     <div class="col-sm-8">
       <p style="text-align: justify;">Dr. Vivek Sharma is a Postdoctoral Researcher working on the CUORE and CUPID experiments searching for neutrinoless double-beta decay, and on the Project 8 experiment measuring the neutrino mass. His work includes developing cryogenic vibrational assessment techniques for CUPID, as well as machine-learning methods for noise reduction in CUORE and CUPID and signal detection in Project 8. He also supports and mentors graduate and undergraduate students.</p>
