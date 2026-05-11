@@ -193,6 +193,23 @@ profile:
 <!-- --- -->
 
 
+### Tyler Schutt
+**Developing a musical component for the CoRTEx**
+
+<div class="row">
+
+  <div class="col-sm-8">
+    <p style="text-align: justify;">I am a third-year undergraduate physics major expected to graduate in 2028. I primarily work on the Mini CoRTEx project and manufacturing for CoRTEx.</p>
+  </div>
+  <div class="col-sm-4">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/Riska.jpeg" alt="">
+  </div>
+</div>
+
+<div style="margin-bottom: 40px;"></div>
+
+
+
 ## 📚 Past members
 <div style="background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-bg-color) 100%); height: 4px; width: 100%; margin: 10px 0 30px 0; border-radius: 2px;"></div>
 ---
