@@ -116,10 +116,12 @@ profile:
 
 <div class="row">
   <div class="col-sm-4">
-    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/profile_placeholder.png" alt="">
+    <img class="img-fluid rounded z-depth-1 profile-img" src="{{ site.baseurl }}/assets/img/elangovan.jpeg" alt="">
   </div>
   <div class="col-sm-8">
-    <p style="text-align: justify;">Coming soon....</p>
+    <p style="text-align: justify;">
+    I did my Bachelor’s in Electronics and Communication Engineering from Anna University, India. I worked at Tata Institute of Fundamental Research for a decade and joined the University of Pittsburgh as a Lead Research Engineer, where I work on high-energy physics instrumentation, including contributions to the ATLAS experiment at CERN. Most of my work revolves around building FPGA-based trigger systems and real-time data acquisition for particle physics experiments. At the same time, I really enjoy working on detector development, I’ve led the development of several cosmic-ray muon detectors, especially portable and interactive ones that are used for both research and outreach. One area I’m particularly passionate about is making particle physics more accessible. Broadly, my interests sit at the intersection of detector electronics, embedded systems, FPGA/AI acceleration and scalable DAQ systems, combining both research and hands-on outreach. 
+ </p>
   </div>
 </div>
 
