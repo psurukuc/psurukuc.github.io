@@ -193,7 +193,7 @@ profile:
 <!-- --- -->
 
 
-### Tyler Schutt
+### Al Riska
 **Developing a musical component for the CoRTEx**
 
 <div class="row">
