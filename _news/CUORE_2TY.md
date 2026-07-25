@@ -4,7 +4,7 @@ date: 2025-10-16 15:45:00-0400
 title: CUORE's latest search for lepton number violation with 2 tonne·year dataset published in Science.
 nav: true
 inline: false
-timeless: yes
+timeless: no
 ---
 
 CUORE's latest search for lepton number violation with 2 tonne·year dataset published in <a href="https://www.science.org/doi/10.1126/science.adp6474">Science</a> with the Title: *Constraints on lepton number violation with the 2 tonne·year CUORE Dataset*
